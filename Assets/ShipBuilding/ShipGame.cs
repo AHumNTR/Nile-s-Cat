@@ -1,8 +1,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 public class ShipGame : MonoBehaviour
 {
+    public FadeText fadeText;
     public TextMeshProUGUI scoreText;
     public List<Ship> ships;
     public int shipIndex=0;
@@ -14,14 +16,8 @@ public class ShipGame : MonoBehaviour
         ships[shipIndex].gameObject.SetActive(true);
         ships[shipIndex].shipParts[0].GetComponent<SpriteRenderer>().enabled=true;
     }
-    public float x,y;
     public float calculatePoints(){
-        float points=0;
-         x =ships[shipIndex].shipParts[shipPartIndex].transform.position.x;
-         y=ships[shipIndex].shipParts[shipPartIndex-1].transform.position.x;
-        points=(1-Mathf.Abs(ships[shipIndex].shipParts[shipPartIndex].transform.position.x-ships[shipIndex].shipParts[shipPartIndex-1].transform.position.x)/3)/(ships[shipIndex].shipParts.Count-1);
-        return points;
-        
+        return (1-Mathf.Abs(ships[shipIndex].shipParts[shipPartIndex].transform.position.x-ships[shipIndex].shipParts[shipPartIndex-1].transform.position.x)/3)/(ships[shipIndex].shipParts.Count-1);
     }   
     void Update()
     {
@@ -39,8 +35,13 @@ public class ShipGame : MonoBehaviour
             }
             else{
                 enabled=false;
-                print("game done");
+                GameData.shipCondition=Points;
+                fadeText.fadeInText(2);
+                Invoke("loadSailingScene",5);
             }
         }
+    }
+    void loadSailingScene(){
+        SceneManager.LoadScene("SailingScene");
     }
 }
