@@ -210,3 +210,120 @@ Start importing Assets using Guid(00000000000000001000000000000000) Importer(815
  -> (artifact id: '97b93d820d95dd656f91242fe8a4f1e0') in 0.0005424 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
 
+========================================================================
+Received Import Request.
+  Time since last request: 886.016934 seconds.
+  path: Assets/Scenes
+  artifactKey: Guid(0d9a623c49ee2b746bd37dcf4dd24bf5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes using Guid(0d9a623c49ee2b746bd37dcf4dd24bf5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'a560ec4c6c4d14077b6a8eb2c26b4a60') in 0.0007211 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.562577 seconds.
+  path: Assets/Scenes/MusteriSahnesi.unity
+  artifactKey: Guid(6d79a10aeecb33640abe183df7561c4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MusteriSahnesi.unity using Guid(6d79a10aeecb33640abe183df7561c4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '7aeba19a2678d7caf961cd864a06b340') in 0.0005795 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.375452 seconds.
+  path: Assets/Scenes/CustomerScene.unity
+  artifactKey: Guid(6d79a10aeecb33640abe183df7561c4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/CustomerScene.unity using Guid(6d79a10aeecb33640abe183df7561c4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '479532b7a73c6262b57dacb0c9211686') in 0.0005546 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.702479 seconds.
+  path: Assets/Scenes/CustomerScene 1.unity
+  artifactKey: Guid(4478ff615985cf04dbf04b500420ac05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/CustomerScene 1.unity using Guid(4478ff615985cf04dbf04b500420ac05) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'f2fa8de20ec413cccdbbce7e9c20911b') in 0.0005867 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.437838 seconds.
+  path: Assets/Scenes/CustomerScene 2.unity
+  artifactKey: Guid(3bccdf95b026a7b40bcfc848144856a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/CustomerScene 2.unity using Guid(3bccdf95b026a7b40bcfc848144856a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '4c432978cb1e00cdc11be712e479ae40') in 0.0005819 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.339779 seconds.
+  path: Assets/Scenes/CustomerScene 3.unity
+  artifactKey: Guid(72288abaccd59d54dac163a15ebea34e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/CustomerScene 3.unity using Guid(72288abaccd59d54dac163a15ebea34e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '04d88974807c4ccd217e2c125c0ee956') in 0.000549 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.659205 seconds.
+  path: Assets/Scenes/SampleScene.unity
+  artifactKey: Guid(8c9cfa26abfee488c85f1582747f6a02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SampleScene.unity using Guid(8c9cfa26abfee488c85f1582747f6a02) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'fa55815a0a3252b2018e9c891afcdfe8') in 0.0006811 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.177808 seconds.
+  path: Assets/Scenes/ShipBuildiingScene.unity
+  artifactKey: Guid(4478ff615985cf04dbf04b500420ac05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/ShipBuildiingScene.unity using Guid(4478ff615985cf04dbf04b500420ac05) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '31c6fb0251180bb4b13c2f4616b9f040') in 0.000669 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.903830 seconds.
+  path: Assets/Scenes/MaterialScene.unity
+  artifactKey: Guid(3bccdf95b026a7b40bcfc848144856a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MaterialScene.unity using Guid(3bccdf95b026a7b40bcfc848144856a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '21464be7ee7e9a1c35b6a73222ef20cd') in 0.0005886 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 44.450316 seconds.
+  path: Assets/Scenes/SailingScene.unity
+  artifactKey: Guid(72288abaccd59d54dac163a15ebea34e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SailingScene.unity using Guid(72288abaccd59d54dac163a15ebea34e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '1909dd4d61dd4ca55d185cc320bb448e') in 0.0006701 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 534.544268 seconds.
+  path: Assets/Animator
+  artifactKey: Guid(058212efea2c2b14981c680b10d5073e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animator using Guid(058212efea2c2b14981c680b10d5073e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '497ed568568827d99e5128cc19df1fe6') in 0.0007287 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.578466 seconds.
+  path: Assets/Animator/Customer.controller
+  artifactKey: Guid(9d61d504e5a048f4da4b55a5a8070550) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animator/Customer.controller using Guid(9d61d504e5a048f4da4b55a5a8070550) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'b279a38a0c9435c5dcac0867b7c9d582') in 0.0021779 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.056628 seconds.
+  path: Assets/Animator/CustomerAnimation.anim
+  artifactKey: Guid(c06c8116ddd09494f9bd94aefcc89f53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animator/CustomerAnimation.anim using Guid(c06c8116ddd09494f9bd94aefcc89f53) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'd8767d6145b40edd4e7b50f8e86978fb') in 0.0014936 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
