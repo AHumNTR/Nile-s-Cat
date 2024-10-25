@@ -4,7 +4,7 @@ using TMPro;
 using UnityEngine.SceneManagement;
 public class ShipGame : MonoBehaviour
 {
-    public FadeText fadeText;
+    public FadeScene fadeScene;
     public TextMeshProUGUI scoreText;
     public List<Ship> ships;
     public int shipIndex=0;
@@ -36,7 +36,7 @@ public class ShipGame : MonoBehaviour
             else{
                 enabled=false;
                 GameData.shipCondition=Points;
-                fadeText.fadeInText(2);
+                fadeScene.fadeInText(2);
                 Invoke("loadSailingScene",5);
             }
         }

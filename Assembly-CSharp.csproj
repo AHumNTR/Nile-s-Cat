@@ -65,9 +65,9 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.0.24f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\FadeScene.cs" />
     <Compile Include="Assets\ShipBuilding\Ship.cs" />
     <Compile Include="Assets\FadeText.cs" />
-    <Compile Include="Assets\FadeImage.cs" />
     <Compile Include="Assets\ShipBuilding\ShipGame.cs" />
     <Compile Include="Assets\ShipBuilding\ShipGameGround.cs" />
     <Compile Include="Assets\GameData.cs" />
