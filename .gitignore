@@ -2,7 +2,7 @@
 /Temp/*
 /Logs/*
 /.vscode/*
-/UserSettings/
+/UserSettings/*
 Assembly-CSharp.csproj
 /obj/*
 
