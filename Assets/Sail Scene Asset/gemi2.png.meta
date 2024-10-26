@@ -1,28 +1,7 @@
 fileFormatVersion: 2
-<<<<<<<< HEAD:Assets/Sail Scene Asset/gemi2.png.meta
 guid: 02a84ae3d28d1e044b54143c0ed30add
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: -946752693959793897
-    second: gemi2_0
-  - first:
-      213: -6218004368793986877
-    second: gemi2_1
-  - first:
-      213: 2810767497589514153
-    second: gemi2_2
-  - first:
-      213: -7542012380935051217
-    second: gemi2_3
-========
-guid: b9c729a231312dc43b4eb0eb6bf0a081
-TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: -8307036024903596894
-    second: Illustration145_0
->>>>>>>> ba2816644c789e9d248ff97784658bb2bad3deb0:Assets/main menu scene/main menu.png.meta
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -60,7 +39,7 @@ TextureImporter:
     mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: 1
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -84,16 +63,16 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
-  applyGammaDecoding: 0
+  applyGammaDecoding: 1
   swizzle: 50462976
-  cookieLightType: 0
+  cookieLightType: 2
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -106,7 +85,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -116,104 +95,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-<<<<<<<< HEAD:Assets/Sail Scene Asset/gemi2.png.meta
-      name: gemi2_0
-      rect:
-        serializedVersion: 2
-        x: 62
-        y: 206
-        width: 9
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 713e162e0757cd2f0800000000000000
-      internalID: -946752693959793897
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: gemi2_1
-========
-      name: Illustration145_0
->>>>>>>> ba2816644c789e9d248ff97784658bb2bad3deb0:Assets/main menu scene/main menu.png.meta
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1420
-        height: 611
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-<<<<<<<< HEAD:Assets/Sail Scene Asset/gemi2.png.meta
-      spriteID: 3c8153298f535b9a0800000000000000
-      internalID: -6218004368793986877
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: gemi2_2
-      rect:
-        serializedVersion: 2
-        x: 67
-        y: 87
-        width: 6
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9af5900a52ad10720800000000000000
-      internalID: 2810767497589514153
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: gemi2_3
-      rect:
-        serializedVersion: 2
-        x: 183
-        y: 83
-        width: 11
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f28a4c6e2b3655790800000000000000
-      internalID: -7542012380935051217
-========
-      spriteID: 2a48f377fba77bc80800000000000000
-      internalID: -8307036024903596894
->>>>>>>> ba2816644c789e9d248ff97784658bb2bad3deb0:Assets/main menu scene/main menu.png.meta
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     customData: 
     physicsShape: []
@@ -227,15 +109,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-<<<<<<<< HEAD:Assets/Sail Scene Asset/gemi2.png.meta
-      gemi2_0: -946752693959793897
-      gemi2_1: -6218004368793986877
-      gemi2_2: 2810767497589514153
-      gemi2_3: -7542012380935051217
-========
-      Illustration145_0: -8307036024903596894
->>>>>>>> ba2816644c789e9d248ff97784658bb2bad3deb0:Assets/main menu scene/main menu.png.meta
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

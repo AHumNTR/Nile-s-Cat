@@ -6,6 +6,7 @@ public class FinishLineScript : MonoBehaviour
 
     public GameObject Timer;
     public GameObject gemi;
+    public GameObject audioSource;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -28,6 +29,7 @@ public class FinishLineScript : MonoBehaviour
         if (collider.tag == "gemi")
         {  
             gemi.GetComponent<GemiScript>().nextLevel();
+            audioSource.GetComponent<AudioSource>().mute = true;
         }
     }
 }
