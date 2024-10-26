@@ -13,4 +13,9 @@ public class mainmenuScript : MonoBehaviour
     {
         
     }
+
+    public void OnStartButtonPressed()
+    {
+        // Transition to next scene
+    }
 }
