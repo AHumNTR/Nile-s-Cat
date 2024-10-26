@@ -58,6 +58,7 @@
     <Compile Include="Assets\Sail Scene Asset\FinishLineScript.cs" />
     <Compile Include="Assets\Sail Scene Asset\TimerScript.cs" />
     <Compile Include="Assets\ShipParts.cs" />
+    <Compile Include="Assets\main menu scene\mainmenuScript.cs" />
     <Compile Include="Assets\Sail Scene Asset\BackgroundScript.cs" />
     <Compile Include="Assets\Sail Scene Asset\TextScript.cs" />
     <Compile Include="Assets\customerScene\PlayerCustomerInterraction.cs" />
