@@ -3,12 +3,9 @@ using System.Collections;
 using System;
 
 // to do list
-// - slide background
-// - player input
-// - steer control
 // - random event
-// - durabilty decrease
-// - 
+// - game over scene
+// - finish line
 
 
 public class BackgroundScript : MonoBehaviour
