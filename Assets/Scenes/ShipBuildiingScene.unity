@@ -2960,7 +2960,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e89f803128ea6ad46a1ddbea5ce9c5dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shipParts: []
+  fadeScene: {fileID: 911160537}
+  scoreText: {fileID: 1002700980}
+  ships:
+  - {fileID: 1954615180}
+  - {fileID: 938163168}
+  - {fileID: 714192551}
+  shipIndex: 0
+  moveSpeed: 1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
