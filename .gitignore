@@ -4,3 +4,4 @@
 /.vscode/
 /UserSettings/
 Assembly-CSharp.csproj
+/obj/
