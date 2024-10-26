@@ -65,18 +65,24 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.0.24f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Sail Scene Asset\CameraScript.cs" />
+    <Compile Include="Assets\Sail Scene Asset\CounterScript.cs" />
     <Compile Include="Assets\FadeScene.cs" />
     <Compile Include="Assets\ShipBuilding\Ship.cs" />
+    <Compile Include="Assets\Sail Scene Asset\Border.cs" />
     <Compile Include="Assets\FadeText.cs" />
     <Compile Include="Assets\PersonalAssets\Egemen\Scripts\MaterialScene\Scheme.cs" />
     <Compile Include="Assets\ShipBuilding\ShipPartConnectionPoint.cs" />
     <Compile Include="Assets\PersonalAssets\Egemen\Scripts\MaterialScene\AlloyBottomDots.cs" />
+    <Compile Include="Assets\Sail Scene Asset\FinishLineScript.cs" />
+    <Compile Include="Assets\Sail Scene Asset\TimerScript.cs" />
     <Compile Include="Assets\ShipParts.cs" />
     <Compile Include="Assets\Sail Scene Asset\BackgroundScript.cs" />
     <Compile Include="Assets\Sail Scene Asset\TextScript.cs" />
     <Compile Include="Assets\customerScene\PlayerCustomerInterraction.cs" />
-    <Compile Include="Assets\Sail Scene Asset\Camera.cs" />
+    <Compile Include="Assets\Sail Scene Asset\WindScript.cs" />
     <Compile Include="Assets\ShipBuilding\ShipGame.cs" />
+    <Compile Include="Assets\Sail Scene Asset\WindTextScript.cs" />
     <Compile Include="Assets\ShipBuilding\ShipGameGround.cs" />
     <Compile Include="Assets\PersonalAssets\Egemen\Scripts\MaterialScene\PrepareButton.cs" />
     <Compile Include="Assets\Sail Scene Asset\GemiScript.cs" />
