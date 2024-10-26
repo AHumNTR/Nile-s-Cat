@@ -67,6 +67,7 @@
     <Compile Include="Assets\ShipBuilding\ShipGameGround.cs" />
     <Compile Include="Assets\PersonalAssets\Egemen\Scripts\MaterialScene\PrepareButton.cs" />
     <Compile Include="Assets\Sail Scene Asset\GemiScript.cs" />
+    <Compile Include="Assets\PersonalAssets\Egemen\Scripts\CauldronScene\Cauldron.cs" />
     <Compile Include="Assets\GameData.cs" />
     <Compile Include="Assets\PersonalAssets\Egemen\Scripts\MaterialScene\Alloy.cs" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
