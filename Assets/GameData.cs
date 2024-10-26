@@ -2,7 +2,8 @@ using UnityEngine;
 
 public static class GameData
 {
-    public static float shipCondition;
-    public static int money;
-    public static int day;
+    public static Color mixtureColor=Color.black;
+    public static float shipCondition=0;
+    public static int money=0;
+    public static int day=0;
 }
