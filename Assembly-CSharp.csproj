@@ -68,9 +68,11 @@
     <Compile Include="Assets\FadeScene.cs" />
     <Compile Include="Assets\ShipBuilding\Ship.cs" />
     <Compile Include="Assets\FadeText.cs" />
+    <Compile Include="Assets\PlayerCustomerInterraction.cs" />
     <Compile Include="Assets\ShipBuilding\ShipGame.cs" />
     <Compile Include="Assets\ShipBuilding\ShipGameGround.cs" />
     <Compile Include="Assets\GameData.cs" />
+    <Compile Include="Assets\ShipPartConnectionPoint.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
