@@ -34,11 +34,17 @@ public class CameraScript : MonoBehaviour
 
     public void slideOff()
     {
+        if (gemi.GetComponent<GemiScript>().nextLevelCalled) 
+        {
+            return;
+        }
+        
         StartCoroutine(SlideCamera());
     }
     
     private IEnumerator SlideCamera()
     {
+
         float time = 0f;
         float startY = transform.position.y;
         float targetY = startY + 0.6f;

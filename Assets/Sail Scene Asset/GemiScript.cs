@@ -1,10 +1,13 @@
 using TMPro;
 using UnityEngine;
 using System.Collections;
+using System.Threading;
 
 
 public class GemiScript : MonoBehaviour
 {
+
+    public float maxCollision = 3;
 
     public float forwardSpeed;
     public float safeCollisionTime;
@@ -15,6 +18,7 @@ public class GemiScript : MonoBehaviour
     private float deceleration = 1;
 
 
+    public GameObject timer;
     public GameObject MainCamera;
     public TextMeshProUGUI text;
     private Rigidbody2D rb;
@@ -70,9 +74,10 @@ public class GemiScript : MonoBehaviour
         text.GetComponent<CounterScript>().updateCount(noCollisions);
         Debug.Log("number of collisions increased to: " + noCollisions);
 
-        if (noCollisions >= 3)
+        if (noCollisions >= maxCollision)
         {
             StopShip();
+            timer.GetComponent<TimerScript>().gameOverCalled = true;
             return;
         }
 

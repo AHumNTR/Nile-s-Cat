@@ -26,7 +26,7 @@ public class FinishLineScript : MonoBehaviour
         Timer.GetComponent<TimerScript>().gameOverCalled = true; // prevents game over if finish line passed
 
         if (collider.tag == "gemi")
-        {
+        {  
             gemi.GetComponent<GemiScript>().nextLevel();
         }
     }

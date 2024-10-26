@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using System;
 
 public class WindScript : MonoBehaviour
 {
@@ -34,21 +35,31 @@ public class WindScript : MonoBehaviour
     }
 
     void Wind()
-    {
-        float decision = Random.Range(0f, 1f);
+    {   
+        if (Timer.GetComponent<TimerScript>().gameOverCalled)
+        {
+            return;
+        }
+
+        if (gemi.GetComponent<GemiScript>().nextLevelCalled)
+        {
+            return;
+        }
+
+        float decision = UnityEngine.Random.Range(0f, 1f);
 
         if (decision > 0.5)
         {
             return;
         }
 
-        int direction = Random.Range(0, 2) == 0 ? -1 : 1;
-        float amount = Random.Range(-1f, 1f);
+        int direction = UnityEngine.Random.Range(0, 2) == 0 ? -1 : 1;
+        float amount = UnityEngine.Random.Range(-10f, 10f);
 
         Debug.Log("added wind" + direction + amount);
 
-        
-        gemi.GetComponent<GemiScript>().addWindForce(direction, 15*amount);
+        WindText.GetComponent<WindTextScript>().updateText(Mathf.Round(amount * 10) / 10);
+        gemi.GetComponent<GemiScript>().addWindForce(direction, amount);
 
     }
 }

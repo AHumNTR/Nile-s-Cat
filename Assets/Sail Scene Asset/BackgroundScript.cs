@@ -2,11 +2,6 @@ using UnityEngine;
 using System.Collections;
 using System;
 
-// to do list
-// - random event
-// - game over scene
-// - next level scene
-
 
 public class BackgroundScript : MonoBehaviour
 {   

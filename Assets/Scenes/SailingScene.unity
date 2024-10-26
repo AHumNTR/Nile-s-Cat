@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 50130769}
   m_Layer: 0
   m_Name: gemi
-  m_TagString: Untagged
+  m_TagString: gemi
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -151,13 +151,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ccc09fe7c6aa7b49a7dd2129788b157, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forwardSpeed: 4
+  maxCollision: 3
+  forwardSpeed: 3.8
   safeCollisionTime: 1
-  camera: {fileID: 406711004}
+  timer: {fileID: 1862299756}
+  MainCamera: {fileID: 406711000}
   text: {fileID: 647786493}
   shipStarted: 0
   shipStopped: 0
   startTimer: 0
+  nextLevelCalled: 0
 --- !u!212 &50130766
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -476,6 +479,7 @@ GameObject:
   - component: {fileID: 272139152}
   - component: {fileID: 272139154}
   - component: {fileID: 272139153}
+  - component: {fileID: 272139155}
   m_Layer: 5
   m_Name: Wind text
   m_TagString: Untagged
@@ -601,6 +605,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 272139151}
   m_CullTransparentMesh: 1
+--- !u!114 &272139155
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 272139151}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff39cb73f1e52654a86cf51b691f1174, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &406711000
 GameObject:
   m_ObjectHideFlags: 0
@@ -984,8 +1000,11 @@ PolygonCollider2D:
       - {x: 1.0106177, y: 38.886612}
       - {x: 0.81338453, y: 41.034554}
       - {x: 1.3512492, y: 45.13975}
-      - {x: 3.017424, y: 49.24668}
-      - {x: 5.720183, y: 51.699898}
+      - {x: 2.87835, y: 48.837482}
+      - {x: -0.43948746, y: 51.396915}
+      - {x: -1.9427285, y: 55.753326}
+      - {x: 11.136721, y: 55.91406}
+      - {x: 11.176498, y: 50.968456}
       - {x: 7.4422283, y: 48.777626}
       - {x: 6.3529067, y: 45.060448}
       - {x: 5.905364, y: 41.874973}
@@ -1007,7 +1026,8 @@ PolygonCollider2D:
       - {x: 10.42576, y: -1.7597504}
       - {x: 16.73205, y: -1.8426995}
       - {x: 16.869781, y: 55.39528}
-      - {x: 3.6016345, y: 55.41801}
+      - {x: 9.356751, y: 57.708687}
+      - {x: -0.48819208, y: 57.445446}
       - {x: -7.5655203, y: 55.315678}
       - {x: -6.9140687, y: -2.2006624}
       - {x: -0.5877852, y: -1.6703304}
@@ -1079,6 +1099,7 @@ GameObject:
   - component: {fileID: 1068113534}
   - component: {fileID: 1068113536}
   - component: {fileID: 1068113535}
+  - component: {fileID: 1068113537}
   m_Layer: 5
   m_Name: Wind
   m_TagString: Untagged
@@ -1141,6 +1162,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1068113533}
   m_CullTransparentMesh: 1
+--- !u!114 &1068113537
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1068113533}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ed7bd03b822b954ebcaed1ecf3757c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gemi: {fileID: 50130764}
+  Timer: {fileID: 1862299756}
+  WindText: {fileID: 272139151}
 --- !u!1 &1197616520
 GameObject:
   m_ObjectHideFlags: 0
