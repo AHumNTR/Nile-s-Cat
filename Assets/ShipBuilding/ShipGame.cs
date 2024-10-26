@@ -43,11 +43,9 @@ public class ShipGame : MonoBehaviour
             else{
                 enabled=false;
                 GameData.shipCondition=Points;
-<<<<<<< HEAD
+
                 fadeScene.fadeInScene(1);
-=======
-                fadeScene.fadeInText(1);
->>>>>>> humus/shipbuilding
+
                 Invoke("loadSailingScene",5);
             }
         }
