@@ -30,6 +30,7 @@ public class TimerScript : MonoBehaviour
                 {
                     gemi.GetComponent<GemiScript>().StopShip();
                     gameOverCalled = true;
+                    Debug.Log("game over called by timer class");
                 }
 
                 timer.text = "0";

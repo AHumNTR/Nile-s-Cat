@@ -21,7 +21,7 @@ public class FinishLineScript : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collider)
     {
-        Debug.Log("finish line trigerred");
+        Debug.Log("finish line trigerred, game over true");
 
         Timer.GetComponent<TimerScript>().gameOverCalled = true; // prevents game over if finish line passed
 
