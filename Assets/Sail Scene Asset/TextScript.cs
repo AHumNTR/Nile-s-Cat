@@ -62,7 +62,6 @@ public class TextScript : MonoBehaviour
 
         if (Gemi != null)
         {
-            Debug.Log("fade out gemiyi başlat");
             Gemi.GetComponent<GemiScript>().StartShip(); 
         }
     }
