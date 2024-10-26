@@ -13,7 +13,7 @@ public class ShipGame : MonoBehaviour
     float Points;
     
     private void Start() {
-        shipIndex=GameData.day;
+        //shipIndex=GameData.day;
         ships[shipIndex].gameObject.SetActive(true);
         ships[shipIndex].shipParts[0].GetComponent<SpriteRenderer>().enabled=true;
     }
@@ -43,7 +43,7 @@ public class ShipGame : MonoBehaviour
             else{
                 enabled=false;
                 GameData.shipCondition=Points;
-                fadeScene.fadeInText(2);
+                fadeScene.fadeInText(1);
                 Invoke("loadSailingScene",5);
             }
         }
