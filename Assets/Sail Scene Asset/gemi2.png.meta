@@ -210,16 +210,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-<<<<<<<< HEAD:Assets/Sail Scene Asset/gemi2.png.meta
       gemi2_0: -946752693959793897
       gemi2_1: -6218004368793986877
       gemi2_2: 2810767497589514153
       gemi2_3: -7542012380935051217
-========
-      Illustration143_0: -2718132052253458498
-      Illustration143_1: 4046190070954796823
-      Illustration143_2: -3666373515713535054
->>>>>>>> a6e3861a09dabc33da89335fa83687329eb5d00e:Assets/VisualAssets/Ship1/Illustration143.png.meta
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
