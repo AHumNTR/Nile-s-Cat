@@ -23,6 +23,6 @@ public class WindTextScript : MonoBehaviour
 
     public void updateText(float amount)
     {
-        textArea.text = Convert.ToString(amount) + "km/h";
+        textArea.text = Convert.ToString(Mathf.Abs(amount)) + "km/h";
     }
 }
