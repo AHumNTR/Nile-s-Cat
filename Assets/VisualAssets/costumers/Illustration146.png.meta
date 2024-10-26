@@ -1,14 +1,10 @@
 fileFormatVersion: 2
-<<<<<<< Updated upstream
-guid: a87c0823af5ba7d45b05d4b07c54fd6e
-=======
-guid: 4cf6fbb778c8cd142aea6040c2f285da
->>>>>>> Stashed changes
+guid: 35f08744aa5eaeb4c8684b407485c38d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7294199278139912532
-    second: part1_0
+      213: -4483849197629958637
+    second: Illustration146_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -104,30 +100,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: part1_0
+      name: Illustration146_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-<<<<<<< Updated upstream
-        width: 1500
-        height: 109
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-=======
-        width: 1390
-        height: 224
+        x: 340
+        y: 75
+        width: 382
+        height: 1314
       alignment: 0
       pivot: {x: 0, y: 0}
->>>>>>> Stashed changes
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cae4f81276cc5ca90800000000000000
-      internalID: -7294199278139912532
+      spriteID: 31698d449ea26c1c0800000000000000
+      internalID: -4483849197629958637
       vertices: []
       indices: 
       edges: []
@@ -136,11 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-<<<<<<< Updated upstream
-    spriteID: 2ed02a3b278a601479d2156730fc2afc
-=======
     spriteID: 
->>>>>>> Stashed changes
     internalID: 0
     vertices: []
     indices: 
@@ -149,12 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-<<<<<<< Updated upstream
-    nameFileIdTable:
-      part1_0: -7294199278139912532
-=======
     nameFileIdTable: {}
->>>>>>> Stashed changes
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

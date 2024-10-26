@@ -1,14 +1,10 @@
 fileFormatVersion: 2
-<<<<<<< Updated upstream
-guid: a87c0823af5ba7d45b05d4b07c54fd6e
-=======
-guid: 4cf6fbb778c8cd142aea6040c2f285da
->>>>>>> Stashed changes
+guid: 68e9b9347d4fbd14e8e07eea3024d158
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7294199278139912532
-    second: part1_0
+      213: -8483731395159641348
+    second: bg2_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -50,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -104,30 +100,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: part1_0
+      name: bg2_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-<<<<<<< Updated upstream
-        width: 1500
-        height: 109
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-=======
-        width: 1390
-        height: 224
+        width: 1920
+        height: 5400
       alignment: 0
       pivot: {x: 0, y: 0}
->>>>>>> Stashed changes
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cae4f81276cc5ca90800000000000000
-      internalID: -7294199278139912532
+      spriteID: cf23eadae3bb34a80800000000000000
+      internalID: -8483731395159641348
       vertices: []
       indices: 
       edges: []
@@ -136,11 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-<<<<<<< Updated upstream
-    spriteID: 2ed02a3b278a601479d2156730fc2afc
-=======
-    spriteID: 
->>>>>>> Stashed changes
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -149,12 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-<<<<<<< Updated upstream
     nameFileIdTable:
-      part1_0: -7294199278139912532
-=======
-    nameFileIdTable: {}
->>>>>>> Stashed changes
+      bg2_0: -8483731395159641348
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

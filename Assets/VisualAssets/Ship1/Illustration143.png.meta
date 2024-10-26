@@ -1,14 +1,16 @@
 fileFormatVersion: 2
-<<<<<<< Updated upstream
-guid: a87c0823af5ba7d45b05d4b07c54fd6e
-=======
-guid: 4cf6fbb778c8cd142aea6040c2f285da
->>>>>>> Stashed changes
+guid: 7d20e79ba38172b4e8aa4cd511f196e4
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7294199278139912532
-    second: part1_0
+      213: -2718132052253458498
+    second: Illustration143_0
+  - first:
+      213: 4046190070954796823
+    second: Illustration143_1
+  - first:
+      213: -3666373515713535054
+    second: Illustration143_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -104,30 +106,67 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: part1_0
+      name: Illustration143_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-<<<<<<< Updated upstream
-        width: 1500
-        height: 109
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-=======
-        width: 1390
-        height: 224
+        x: 677
+        y: 1049
+        width: 15
+        height: 31
       alignment: 0
       pivot: {x: 0, y: 0}
->>>>>>> Stashed changes
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cae4f81276cc5ca90800000000000000
-      internalID: -7294199278139912532
+      spriteID: ebf34dcbc41474ad0800000000000000
+      internalID: -2718132052253458498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration143_1
+      rect:
+        serializedVersion: 2
+        x: 891
+        y: 1069
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71729f09e64f62830800000000000000
+      internalID: 4046190070954796823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Illustration143_2
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 2
+        width: 1466
+        height: 1035
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b3aef576bc6e1dc0800000000000000
+      internalID: -3666373515713535054
       vertices: []
       indices: 
       edges: []
@@ -136,11 +175,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-<<<<<<< Updated upstream
-    spriteID: 2ed02a3b278a601479d2156730fc2afc
-=======
     spriteID: 
->>>>>>> Stashed changes
     internalID: 0
     vertices: []
     indices: 
@@ -149,12 +184,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-<<<<<<< Updated upstream
-    nameFileIdTable:
-      part1_0: -7294199278139912532
-=======
     nameFileIdTable: {}
->>>>>>> Stashed changes
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
