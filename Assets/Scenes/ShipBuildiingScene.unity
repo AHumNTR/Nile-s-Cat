@@ -4188,8 +4188,8 @@ MonoBehaviour:
   - {fileID: 1954615180}
   - {fileID: 938163168}
   - {fileID: 714192551}
-  shipIndex: 1
-  moveSpeed: 3
+  shipIndex: 0
+  moveSpeed: 1
   penaltyScaling: 0.3
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
