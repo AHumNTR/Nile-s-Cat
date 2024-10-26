@@ -31,6 +31,6 @@ public class PrepareButton : MonoBehaviour
         //GameData.shipCondition = totalDurabilityToChange;
         Debug.Log(totalDurabilityToChange);
 
-        SceneManager.LoadScene($"ShipBuildiingScene");
+        SceneManager.LoadScene($"{sceneToGo}");
     }
 }
