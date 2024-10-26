@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 8b51ee1a3b4d87f46b34a410f190ded6
+guid: 1946c22c924e3b74690280b5bf5c3a5d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4483849197629958637
-    second: Illustration146_0
+      213: -7915526679383334447
+    second: CauldronBG_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Illustration146_0
+      name: CauldronBG_0
       rect:
         serializedVersion: 2
-        x: 340
-        y: 75
-        width: 382
-        height: 1314
+        x: 0
+        y: 0
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 31698d449ea26c1c0800000000000000
-      internalID: -4483849197629958637
+      spriteID: 1d1aa316c66662290800000000000000
+      internalID: -7915526679383334447
       vertices: []
       indices: 
       edges: []
@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      CauldronBG_0: -7915526679383334447
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

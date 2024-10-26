@@ -21,14 +21,14 @@ public class PrepareButton : MonoBehaviour
 
     #endregion
     
+    [HideInInspector]
     public int totalDurabilityToChange;
     
     [SerializeField] private string sceneToGo;
     
     public void OnPrepareButtonPressed()
     {
-        
-        //GameData.shipCondition = totalDurabilityToChange;
+        GameData.shipCondition = totalDurabilityToChange;
         Debug.Log(totalDurabilityToChange);
 
         SceneManager.LoadScene($"{sceneToGo}");

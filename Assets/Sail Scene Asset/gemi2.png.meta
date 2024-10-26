@@ -1,4 +1,5 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Sail Scene Asset/gemi2.png.meta
 guid: 02a84ae3d28d1e044b54143c0ed30add
 TextureImporter:
   internalIDToNameTable:
@@ -14,6 +15,14 @@ TextureImporter:
   - first:
       213: -7542012380935051217
     second: gemi2_3
+========
+guid: 2ad178217823a004d9e7944486655fe3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5734888567148846429
+    second: Cauldron_0
+>>>>>>>> 215e260e88264230b4e274137ee65ddb67d38032:Assets/PersonalAssets/Egemen/VisualAssets/CauldronAsset/Cauldron.png.meta
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -109,6 +118,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
+<<<<<<<< HEAD:Assets/Sail Scene Asset/gemi2.png.meta
       name: gemi2_0
       rect:
         serializedVersion: 2
@@ -132,12 +142,15 @@ TextureImporter:
       weights: []
     - serializedVersion: 2
       name: gemi2_1
+========
+      name: Cauldron_0
+>>>>>>>> 215e260e88264230b4e274137ee65ddb67d38032:Assets/PersonalAssets/Egemen/VisualAssets/CauldronAsset/Cauldron.png.meta
       rect:
         serializedVersion: 2
-        x: 74
-        y: 22
-        width: 109
-        height: 211
+        x: 14
+        y: 9
+        width: 283
+        height: 255
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -146,6 +159,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
+<<<<<<<< HEAD:Assets/Sail Scene Asset/gemi2.png.meta
       spriteID: 3c8153298f535b9a0800000000000000
       internalID: -6218004368793986877
       vertices: []
@@ -192,6 +206,10 @@ TextureImporter:
       bones: []
       spriteID: f28a4c6e2b3655790800000000000000
       internalID: -7542012380935051217
+========
+      spriteID: 3a2e4a0ab359960b0800000000000000
+      internalID: -5734888567148846429
+>>>>>>>> 215e260e88264230b4e274137ee65ddb67d38032:Assets/PersonalAssets/Egemen/VisualAssets/CauldronAsset/Cauldron.png.meta
       vertices: []
       indices: 
       edges: []
@@ -210,10 +228,14 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
+<<<<<<<< HEAD:Assets/Sail Scene Asset/gemi2.png.meta
       gemi2_0: -946752693959793897
       gemi2_1: -6218004368793986877
       gemi2_2: 2810767497589514153
       gemi2_3: -7542012380935051217
+========
+      Cauldron_0: -5734888567148846429
+>>>>>>>> 215e260e88264230b4e274137ee65ddb67d38032:Assets/PersonalAssets/Egemen/VisualAssets/CauldronAsset/Cauldron.png.meta
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
