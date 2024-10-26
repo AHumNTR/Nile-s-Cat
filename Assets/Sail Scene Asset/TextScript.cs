@@ -11,7 +11,7 @@ public class TextScript : MonoBehaviour
 
 
     public float fadeDuration = 2;
-    public float delayBetweenFades = 2f;
+    public float delayBetweenFades = 1f;
 
     void Start()
     {
@@ -62,7 +62,6 @@ public class TextScript : MonoBehaviour
 
         if (Gemi != null)
         {
-            Debug.Log("fade out gemiyi başlat");
             Gemi.GetComponent<GemiScript>().StartShip(); 
         }
     }

@@ -4,3 +4,6 @@
 /.vscode/
 /UserSettings/
 Assembly-CSharp.csproj
+/obj/
+Assembly-CSharp.csproj
+obj/Debug/Assembly-CSharp.csproj.AssemblyReference.cache
