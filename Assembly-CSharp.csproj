@@ -69,9 +69,14 @@
     <Compile Include="Assets\ShipBuilding\Ship.cs" />
     <Compile Include="Assets\FadeText.cs" />
     <Compile Include="Assets\ShipBuilding\ShipPartConnectionPoint.cs" />
+    <Compile Include="Assets\ShipParts.cs" />
+    <Compile Include="Assets\Sail Scene Asset\BackgroundScript.cs" />
+    <Compile Include="Assets\Sail Scene Asset\TextScript.cs" />
     <Compile Include="Assets\customerScene\PlayerCustomerInterraction.cs" />
+    <Compile Include="Assets\Sail Scene Asset\Camera.cs" />
     <Compile Include="Assets\ShipBuilding\ShipGame.cs" />
     <Compile Include="Assets\ShipBuilding\ShipGameGround.cs" />
+    <Compile Include="Assets\Sail Scene Asset\GemiScript.cs" />
     <Compile Include="Assets\GameData.cs" />
   </ItemGroup>
   <ItemGroup>
