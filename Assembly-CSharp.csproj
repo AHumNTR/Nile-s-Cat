@@ -46,9 +46,11 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.0.24f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\PersonalAssets\Egemen\Scripts\Alloy.cs" />
+    <Compile Include="Assets\PersonalAssets\Egemen\Scripts\MaterialScene\Scheme.cs" />
+    <Compile Include="Assets\PersonalAssets\Egemen\Scripts\MaterialScene\AlloyBottomDots.cs" />
     <Compile Include="Assets\ShipParts.cs" />
-    <Compile Include="Assets\PersonalAssets\Egemen\Scripts\AlloyBottomDots.cs" />
+    <Compile Include="Assets\PersonalAssets\Egemen\Scripts\MaterialScene\PrepareButton.cs" />
+    <Compile Include="Assets\PersonalAssets\Egemen\Scripts\MaterialScene\Alloy.cs" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile-2-Pass.shader" />
