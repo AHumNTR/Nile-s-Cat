@@ -1,4 +1,6 @@
+using Microsoft.Unity.VisualStudio.Editor;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Crystal : MonoBehaviour
 {
@@ -22,7 +24,7 @@ public class Crystal : MonoBehaviour
     void Update()
     {
         lerpTime += Time.deltaTime / transitionSpeed;
-        GetComponent<SpriteRenderer>().color = Color.Lerp(states[statesIdx], states[states2Idx], lerpTime);
+        GetComponent<UnityEngine.UI.Image>().color = Color.Lerp(states[statesIdx], states[states2Idx], lerpTime);
         if (lerpTime >= 1f)
         {
             lerpTime = 0f;
