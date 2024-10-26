@@ -43,11 +43,10 @@ public class ShipGame : MonoBehaviour
             else{
                 enabled=false;
                 GameData.shipCondition=Points;
-                ships[shipIndex].shipParts[shipPartIndex-1].transform.GetChild(0).gameObject.SetActive(false);
+
                 fadeScene.fadeInScene(1);
 
                 Invoke("loadSailingScene",5);
-                
             }
         }
     }
