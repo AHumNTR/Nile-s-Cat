@@ -36,7 +36,7 @@ public class ShipGame : MonoBehaviour
             else{
                 enabled=false;
                 GameData.shipCondition=Points;
-                fadeScene.fadeInText(2);
+                fadeScene.fadeInScene(1);
                 Invoke("loadSailingScene",5);
             }
         }

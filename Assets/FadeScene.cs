@@ -10,10 +10,10 @@ public class FadeScene : MonoBehaviour
     private void Start() {
         image=GetComponent<Image>();
     }
-    public void fadeInText(float speed){
-        StartCoroutine(fadeIntextCoroutine(speed));
+    public void fadeInScene(float speed){
+        StartCoroutine(fadeInSceneCoroutine(speed));
     }
-    IEnumerator fadeIntextCoroutine(float speed){
+    IEnumerator fadeInSceneCoroutine(float speed){
         while(image.color.a<=1)
         {
             image.color+=speed*Interval*Color.black;//black for only transperancy
