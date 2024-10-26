@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class mainmenuScript : MonoBehaviour
 {
@@ -16,6 +17,6 @@ public class mainmenuScript : MonoBehaviour
 
     public void OnStartButtonPressed()
     {
-        // Transition to next scene
+        SceneManager.LoadScene("CustomerScene");
     }
 }
