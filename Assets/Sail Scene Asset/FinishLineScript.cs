@@ -4,6 +4,7 @@ using UnityEngine;
 public class FinishLineScript : MonoBehaviour
 {
 
+    public GameObject Timer;
     public GameObject gemi;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -20,7 +21,10 @@ public class FinishLineScript : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collider)
     {
-        Debug.Log("trigger trigerred");
+        Debug.Log("finish line trigerred");
+
+        Timer.GetComponent<TimerScript>().gameOverCalled = true; // prevents game over if finish line passed
+
         if (collider.tag == "gemi")
         {
             gemi.GetComponent<GemiScript>().nextLevel();

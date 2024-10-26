@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class TimerScript : MonoBehaviour
 {
+    public bool gameOverCalled = false;
     private TextMeshProUGUI timer;
     public GameObject gemi;
 
@@ -25,7 +26,12 @@ public class TimerScript : MonoBehaviour
 
             if (time <= 0)
             {
-                gemi.GetComponent<GemiScript>().GameOver();
+                if (!gameOverCalled)
+                {
+                    gemi.GetComponent<GemiScript>().StopShip();
+                    gameOverCalled = true;
+                }
+
                 timer.text = "0";
             }
         }

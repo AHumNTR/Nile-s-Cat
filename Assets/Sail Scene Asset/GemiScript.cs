@@ -15,12 +15,13 @@ public class GemiScript : MonoBehaviour
     private float deceleration = 1;
 
 
-    public Camera camera;
+    public GameObject MainCamera;
     public TextMeshProUGUI text;
     private Rigidbody2D rb;
     public bool shipStarted = false;
     public bool shipStopped = false;
     public bool startTimer = false;
+    public bool nextLevelCalled = false;
 
     void Start()
     {
@@ -63,18 +64,18 @@ public class GemiScript : MonoBehaviour
         }
     }
 
-
     void OnCollisionEnter2D(Collision2D collision)
     {
+        noCollisions +=1;
+        text.GetComponent<CounterScript>().updateCount(noCollisions);
+        Debug.Log("number of collisions increased to: " + noCollisions);
+
         if (noCollisions >= 3)
         {
             StopShip();
             return;
         }
 
-        noCollisions +=1;
-        text.GetComponent<CounterScript>().updateCount(noCollisions);
-        Debug.Log("number of collisions increased to: " + noCollisions);
     }
 
     void OnCollisionStay2D(Collision2D collision)
@@ -99,7 +100,7 @@ public class GemiScript : MonoBehaviour
         shipStarted = false;
         rb.linearVelocity = new Vector2(rb.linearVelocityX, Mathf.Lerp(rb.linearVelocityY, 0, deceleration * Time.deltaTime)); 
         rb.linearVelocity = Vector2.zero;
-        camera.GetComponent<Camera>().slideOff();
+        MainCamera.GetComponent<CameraScript>().slideOff();
         shipStopped = true;
     }
 
@@ -108,14 +109,19 @@ public class GemiScript : MonoBehaviour
         // Transition to the game over scene
         // Play Animation
         Debug.Log("game over  no no no no o");
-        Destroy(gameObject);
+
+
+        // Destroy(gameObject);
     }
 
     public void nextLevel()
     {
         // Transition Scene to the next level
         Debug.Log("next level go go go");
-        Destroy(gameObject);
+        nextLevelCalled = true;
+
+
+        // Destroy(gameObject);
     }
 
     private void calculateSteering()
@@ -153,4 +159,12 @@ public class GemiScript : MonoBehaviour
         rb.linearVelocity = transform.up * targetSpeed;
         shipStarted = true;
     }
+
+    public void addWindForce(int direction, float amount)
+    {
+       Vector2 windForce = new Vector2(direction * amount, 0);
+       rb.AddForce(windForce);
+    }
+
+
 }

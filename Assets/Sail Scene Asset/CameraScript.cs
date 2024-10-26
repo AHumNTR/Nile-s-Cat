@@ -3,13 +3,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Camera : MonoBehaviour
+public class CameraScript : MonoBehaviour
 {
     public Transform ship;
     public GameObject gemi;
     private Vector3 newVector;
 
-    private float cameraMaxY = 36.6f;
+    private float cameraMaxY = 32.6f;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
