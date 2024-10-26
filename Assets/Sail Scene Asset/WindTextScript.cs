@@ -12,7 +12,7 @@ public class WindTextScript : MonoBehaviour
     void Start()
     {
         textArea = GetComponent<TextMeshProUGUI>();
-        textArea.text = "";
+        textArea.text = "0";
     }
 
     // Update is called once per frame
@@ -23,6 +23,6 @@ public class WindTextScript : MonoBehaviour
 
     public void updateText(float amount)
     {
-        textArea.text = Convert.ToString(Mathf.Abs(amount)) + "km/h";
+        textArea.text = Convert.ToString(amount);
     }
 }

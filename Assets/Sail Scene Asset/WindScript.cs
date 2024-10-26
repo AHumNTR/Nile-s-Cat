@@ -1,7 +1,6 @@
 using UnityEngine;
 using System.Collections;
 using System;
-using UnityEngine.UI;
 
 public class WindScript : MonoBehaviour
 {
@@ -15,45 +14,41 @@ public class WindScript : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        Invoke("StartWind", 6f);
-        GetComponent<RawImage>().enabled = false;
+        Invoke("StartWind", 7f);
+        
     }
 
     // Update is called once per frame
     void StartWind()
     {
         Debug.Log("wind start");
-        StartCoroutine(CallMyMethodEveryNSeconds(2f));
+        StartCoroutine(CallMyMethodEveryNSeconds(2.5f));
     }
 
     private IEnumerator CallMyMethodEveryNSeconds(float seconds)
     {
         while (true)
         {
-            if (Timer.GetComponent<TimerScript>().gameOverCalled)
-            {
-                break;
-            }
-
-            if (gemi.GetComponent<GemiScript>().nextLevelCalled)
-            {
-                break;
-            }
-
             Wind();
-
             yield return new WaitForSeconds(seconds);
-
-            Debug.Log("called wind in while");
         }
-        Debug.Log("out of while");
     }
 
     void Wind()
     {   
+        if (Timer.GetComponent<TimerScript>().gameOverCalled)
+        {
+            return;
+        }
+
+        if (gemi.GetComponent<GemiScript>().nextLevelCalled)
+        {
+            return;
+        }
+
         float decision = UnityEngine.Random.Range(0f, 1f);
 
-        if (decision > 0.75)
+        if (decision > 0.5)
         {
             return;
         }
@@ -64,20 +59,6 @@ public class WindScript : MonoBehaviour
         Debug.Log("added wind" + direction + amount);
 
         WindText.GetComponent<WindTextScript>().updateText(Mathf.Round(amount * 10) / 10);
-
-        if (amount > 0) {
-            GetComponent<RectTransform>().localScale = new Vector3(1,1,1);
-            GetComponent<RawImage>().enabled = true;
-
-        } else if (amount < 0)
-        {
-            GetComponent<RectTransform>().localScale = new Vector3(-1,1,1);
-            GetComponent<RawImage>().enabled = true;
-        } else {
-            GetComponent<RawImage>().enabled = false;
-        }
-
-
         gemi.GetComponent<GemiScript>().addWindForce(direction, amount);
 
     }

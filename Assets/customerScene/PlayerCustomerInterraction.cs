@@ -7,12 +7,6 @@ public class PlayerCustomerInterraction : MonoBehaviour
 {
     public List<Sprite> shipSprites,customerSprites;
     Animator anim;
-    SpriteRenderer image;
-    public void askForAShip(){
-        GameData.mixtureColor=Random.ColorHSV(0,1,0,1,0,1,1,1);
-        image.sprite=shipSprites[GameData.day];
-        image.color=GameData.mixtureColor;
-    }
     public SpriteRenderer customerImage,shipImage;
     public void refuse(){
         Invoke("resetRun",4);

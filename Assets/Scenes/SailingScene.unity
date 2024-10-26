@@ -205,12 +205,20 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+<<<<<<< HEAD
   m_Sprite: {fileID: 21300000, guid: 02a84ae3d28d1e044b54143c0ed30add, type: 3}
+=======
+  m_Sprite: {fileID: -7881417513059617870, guid: 152ee1141a5d7a4479a84d7f394686bc, type: 3}
+>>>>>>> humus/shipbuilding
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
+<<<<<<< HEAD
   m_Size: {x: 2.56, y: 2.56}
+=======
+  m_Size: {x: 1.09, y: 2.11}
+>>>>>>> humus/shipbuilding
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -296,8 +304,13 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
+<<<<<<< HEAD
     oldSize: {x: 2.56, y: 2.56}
     newSize: {x: 2.56, y: 2.56}
+=======
+    oldSize: {x: 1.09, y: 2.11}
+    newSize: {x: 1.09, y: 2.11}
+>>>>>>> humus/shipbuilding
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -499,11 +512,19 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
+<<<<<<< HEAD
   m_Father: {fileID: 1820903761}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -473.9, y: -174.60002}
+=======
+  m_Father: {fileID: 1068113534}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 3.5, y: 67.2}
+>>>>>>> humus/shipbuilding
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &272139153
@@ -1118,7 +1139,12 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
+<<<<<<< HEAD
   m_Children: []
+=======
+  m_Children:
+  - {fileID: 272139152}
+>>>>>>> humus/shipbuilding
   m_Father: {fileID: 1820903761}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -1317,7 +1343,11 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -1
+<<<<<<< HEAD
   m_Sprite: {fileID: 21300000, guid: 68e9b9347d4fbd14e8e07eea3024d158, type: 3}
+=======
+  m_Sprite: {fileID: -4364034832326165938, guid: 10687be453c717f4085b45d808ea520b, type: 3}
+>>>>>>> humus/shipbuilding
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1472,7 +1502,6 @@ RectTransform:
   - {fileID: 105773834}
   - {fileID: 647786492}
   - {fileID: 1862299757}
-  - {fileID: 272139152}
   - {fileID: 1068113534}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
