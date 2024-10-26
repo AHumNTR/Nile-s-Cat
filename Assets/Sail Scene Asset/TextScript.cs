@@ -11,7 +11,7 @@ public class TextScript : MonoBehaviour
 
 
     public float fadeDuration = 2;
-    public float delayBetweenFades = 2f;
+    public float delayBetweenFades = 1f;
 
     void Start()
     {

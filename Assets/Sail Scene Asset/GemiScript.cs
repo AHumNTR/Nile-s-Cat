@@ -78,6 +78,7 @@ public class GemiScript : MonoBehaviour
         {
             StopShip();
             timer.GetComponent<TimerScript>().gameOverCalled = true;
+            Debug.Log("game over cause collision");
             return;
         }
 

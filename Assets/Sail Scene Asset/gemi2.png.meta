@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: a87c0823af5ba7d45b05d4b07c54fd6e
+guid: 02a84ae3d28d1e044b54143c0ed30add
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7294199278139912532
-    second: part1_0
+      213: -946752693959793897
+    second: gemi2_0
+  - first:
+      213: -6218004368793986877
+    second: gemi2_1
+  - first:
+      213: 2810767497589514153
+    second: gemi2_2
+  - first:
+      213: -7542012380935051217
+    second: gemi2_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +55,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -100,13 +109,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: part1_0
+      name: gemi2_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1390
-        height: 224
+        x: 62
+        y: 206
+        width: 9
+        height: 9
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +124,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cae4f81276cc5ca90800000000000000
-      internalID: -7294199278139912532
+      spriteID: 713e162e0757cd2f0800000000000000
+      internalID: -946752693959793897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemi2_1
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 22
+        width: 109
+        height: 211
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c8153298f535b9a0800000000000000
+      internalID: -6218004368793986877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemi2_2
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 87
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9af5900a52ad10720800000000000000
+      internalID: 2810767497589514153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemi2_3
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 83
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f28a4c6e2b3655790800000000000000
+      internalID: -7542012380935051217
       vertices: []
       indices: 
       edges: []
@@ -125,7 +200,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +210,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      part1_0: -7294199278139912532
+      gemi2_0: -946752693959793897
+      gemi2_1: -6218004368793986877
+      gemi2_2: 2810767497589514153
+      gemi2_3: -7542012380935051217
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
