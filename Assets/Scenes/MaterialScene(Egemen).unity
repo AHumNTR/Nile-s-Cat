@@ -231,7 +231,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 750, y: -200}
+  m_AnchoredPosition: {x: 750, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &129659966
@@ -246,6 +246,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4d5e9bedd1aefc40869eabf94cb4cf7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  alloyName: 
   durabilityValue: 20
   color: {r: 0.5975055, g: 0.5582503, b: 0.6132076, a: 1}
 --- !u!114 &129659967
@@ -261,14 +262,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.59607846, g: 0.5568628, b: 0.6117647, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 714f51b71a1b172489050ae6b2e0ee09, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1682,6 +1683,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2498d7fbaa69fc4b804e3e4c49d8634, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isPressable: 0
   dotObjects:
   - {fileID: 1958694251}
   - {fileID: 958732004}
@@ -2227,6 +2229,7 @@ GameObject:
   - component: {fileID: 1197817073}
   - component: {fileID: 1197817072}
   - component: {fileID: 1197817071}
+  - component: {fileID: 1197817074}
   m_Layer: 5
   m_Name: Alloy_1 - Crystal
   m_TagString: Untagged
@@ -2252,7 +2255,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 750, y: 0}
+  m_AnchoredPosition: {x: 750, y: -200}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1197817071
@@ -2267,6 +2270,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4d5e9bedd1aefc40869eabf94cb4cf7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  alloyName: 
   durabilityValue: 10
   color: {r: 0.7019608, g: 0.20784314, b: 0.8980392, a: 1}
 --- !u!114 &1197817072
@@ -2282,14 +2286,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.7019608, g: 0.20784314, b: 0.8980392, a: 1}
+  m_Color: {r: 0.56259304, g: 1, b: 0.5424528, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 21817d17c29e0e446bfea2d717063df8, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2307,6 +2311,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1197817069}
   m_CullTransparentMesh: 1
+--- !u!114 &1197817074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1197817069}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0107c61649ee6104fb179348762fafc3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  transitionSpeed: 2
 --- !u!1 &1230143545
 GameObject:
   m_ObjectHideFlags: 0
@@ -2749,7 +2766,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.37503725, g: 0.8773585, b: 0.24417053, a: 1}
+  m_Color: {r: 0.8784314, g: 0.71731853, b: 0.24313723, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2916,14 +2933,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.6784314, g: 0.32156864, b: 0.09411765, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: c1905dfbc43e2ee44b7a6040589832b6, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2953,6 +2970,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4d5e9bedd1aefc40869eabf94cb4cf7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  alloyName: 
   durabilityValue: 5
   color: {r: 0.6784314, g: 0.32156864, b: 0.09411765, a: 1}
 --- !u!1 &1884439405
