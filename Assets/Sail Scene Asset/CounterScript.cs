@@ -7,12 +7,12 @@ using UnityEngine.UI;
 public class CounterScript : MonoBehaviour
 {
     private TextMeshProUGUI counter;
-    private String baseText = "Number of collisions: ";
+    private String baseText = "Number of crashes: ";
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         counter = GetComponent<TextMeshProUGUI>();
-        counter.text = baseText + "0";
+        counter.text = baseText + "0/3";
         //counter.enabled = false;
     }
 
@@ -24,6 +24,6 @@ public class CounterScript : MonoBehaviour
     public void updateCount(int n)
     {
         String number = Convert.ToString(n);
-        counter.text = baseText + number;
+        counter.text = baseText + number + "/3";
     }
 }
