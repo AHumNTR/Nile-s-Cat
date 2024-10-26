@@ -1188,12 +1188,10 @@ MonoBehaviour:
   shipParts:
   - {fileID: 1209580769}
   - {fileID: 1660320074}
-<<<<<<< HEAD
   - {fileID: 1279110298}
   - {fileID: 376344751}
   - {fileID: 1957416440}
-=======
->>>>>>> humus/shipbuilding
+
 --- !u!1 &899507919
 GameObject:
   m_ObjectHideFlags: 0
@@ -1766,18 +1764,11 @@ Transform:
   m_GameObject: {fileID: 1209580769}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-<<<<<<< HEAD
-  m_LocalPosition: {x: 0, y: 0.11, z: 0}
-  m_LocalScale: {x: 6, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-=======
   m_LocalPosition: {x: 0, y: -1.7, z: 0}
   m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1791180673}
->>>>>>> humus/shipbuilding
   m_Father: {fileID: 714192550}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1209580771
@@ -1824,11 +1815,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-<<<<<<< HEAD
-  m_Size: {x: 1, y: 1}
-=======
   m_Size: {x: 9.193296, y: 1.09}
->>>>>>> humus/shipbuilding
   m_EdgeRadius: 0
 --- !u!50 &1209580772
 Rigidbody2D:
@@ -3329,15 +3316,9 @@ Transform:
   m_GameObject: {fileID: 1660320074}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-<<<<<<< HEAD
-  m_LocalPosition: {x: 0, y: 1.57, z: 0}
-  m_LocalScale: {x: 6, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-=======
   m_LocalPosition: {x: 0.03, y: -0.6, z: 0}
   m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_ConstrainProportionsScale: 1
->>>>>>> humus/shipbuilding
   m_Children: []
   m_Father: {fileID: 714192550}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3643,8 +3624,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
-<<<<<<< HEAD
-=======
 --- !u!1 &1791180672
 GameObject:
   m_ObjectHideFlags: 0
@@ -3732,7 +3711,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
->>>>>>> humus/shipbuilding
 --- !u!1 &1816422438
 GameObject:
   m_ObjectHideFlags: 0
@@ -4299,14 +4277,8 @@ MonoBehaviour:
   - {fileID: 714192551}
   - {fileID: 1954615180}
   - {fileID: 938163168}
-<<<<<<< HEAD
-  - {fileID: 714192551}
-  shipIndex: 0
-  moveSpeed: 1
-=======
   shipIndex: 2
   moveSpeed: 3
->>>>>>> humus/shipbuilding
   penaltyScaling: 0.3
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
