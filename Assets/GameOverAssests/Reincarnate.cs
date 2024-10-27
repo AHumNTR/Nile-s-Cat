@@ -5,7 +5,7 @@ public class Reincarnate : MonoBehaviour
 { 
     public void restartGame()
     {
-        GameData.day = 0;
+        GameData.Day = 0;
         SceneManager.LoadScene("StartMenu");
     }
 }

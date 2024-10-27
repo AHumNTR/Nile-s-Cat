@@ -10,7 +10,7 @@ public class PlayerCustomerInterraction : MonoBehaviour
     public SpriteRenderer customerImage,shipImage;
     public void askForAShip(){
         GameData.mixtureColor=Random.ColorHSV(0,1,0,1,0,1,1,1);
-        shipImage.sprite=shipSprites[GameData.day];
+        shipImage.sprite=shipSprites[GameData.Day];
         shipImage.color=GameData.mixtureColor;
     }
     
@@ -18,7 +18,7 @@ public class PlayerCustomerInterraction : MonoBehaviour
         Invoke("resetRun",4);
     }
     public void resetRun(){
-        GameData.day=0;
+        GameData.Day=0;
         SceneManager.LoadScene("GameOver");
     }
     public void accept(){
@@ -26,7 +26,7 @@ public class PlayerCustomerInterraction : MonoBehaviour
     }
     void Start()
     {
-        customerImage.sprite=customerSprites[GameData.day];
-        shipImage.sprite=shipSprites[GameData.day];
+        customerImage.sprite=customerSprites[GameData.Day];
+        shipImage.sprite=shipSprites[GameData.Day];
     }
 }

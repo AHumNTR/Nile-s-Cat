@@ -132,13 +132,13 @@ public class GemiScript : MonoBehaviour
     {
         nextLevelCalled = true;
 
-        GameData.day++;
+        GameData.Day++;
         SceneManager.LoadScene("CustomerScene");
     }
 
     private void calculateSteering()
     {
-        float shipCondition = GameData.shipCondition;
+        float shipCondition = GameData.Steering;
 
         if (shipCondition < 0.5f)
         {

@@ -33,7 +33,7 @@ public class Scheme : MonoBehaviour
 
         for (var i = 0; i < _schemeSelectButtons.Length; i++)
         {
-            if (i <= GameData.day)
+            if (i <= GameData.Day)
             {
                 _schemeSelectButtons[i].image.color = Color.white;
             }

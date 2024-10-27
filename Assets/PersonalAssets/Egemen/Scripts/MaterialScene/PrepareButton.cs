@@ -30,7 +30,7 @@ public class PrepareButton : MonoBehaviour
     {
         if (totalDurabilityToChange == 0 || Scheme.Instance.mainSchemeImage.sprite == null) return;
         
-        GameData.shipCondition = totalDurabilityToChange * .1f;
+        GameData.Steering = totalDurabilityToChange * .1f;
         Debug.Log(totalDurabilityToChange);
 
         SceneManager.LoadScene($"{sceneToGo}");
