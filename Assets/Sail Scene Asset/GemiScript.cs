@@ -39,7 +39,7 @@ public class GemiScript : MonoBehaviour
 
         if (GameData.Speed < 60) 
         {
-            forwardSpeed = GameData.Speed / 15f;
+            forwardSpeed = GameData.Speed / 12f;
         }
 
         if (GameData.Speed >= 60)
