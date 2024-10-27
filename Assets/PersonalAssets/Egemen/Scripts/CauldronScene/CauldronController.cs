@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -7,6 +8,7 @@ public class CauldronController : MonoBehaviour
     [SerializeField] private string sceneNameToGo;
     [SerializeField] private float timeInSeconds;
     [SerializeField] private TextMeshProUGUI timeText;
+   
     
     private Cauldron[] _cauldrons;
     

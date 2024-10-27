@@ -45,18 +45,25 @@ public class AlloyBottomDots : MonoBehaviour
     
     public void DecreaseDot(Color color, int valueToChange)
     {
-        foreach (var dotObject in dotObjects.Reverse())
-        {
-            var tempImage = dotObject.GetComponent<Image>();
-            if (Mathf.Approximately(tempImage.color.a, 1) && tempImage.color == color)
+        bool removedDot=false;
+        for(int i =0;i<dotObjects.Length;i++){
+            var tempImage = dotObjects[i].GetComponent<Image>();
+            if(removedDot&&i<dotObjects.Length-1){
+                tempImage.GetComponent<Image>().color=dotObjects[i+1].GetComponent<Image>().color;
+            }
+            if (Mathf.Approximately(tempImage.color.a, 1) && tempImage.color == color&&!removedDot)
             {
                 var imageColor = tempImage.color;
                 imageColor.a = 0;
                 tempImage.color = imageColor;
                 
                 PrepareButton.Instance.totalDurabilityToChange -= valueToChange;
-                return;
+                removedDot=true;
+                if(i==dotObjects.Length-1) dotObjects[dotObjects.Length-1].GetComponent<Image>().color=Color.clear;
+                else tempImage.GetComponent<Image>().color=dotObjects[i+1].GetComponent<Image>().color;
             }
+            
         }
+        dotObjects[dotObjects.Length-1].GetComponent<Image>().color=Color.clear;
     }
 }

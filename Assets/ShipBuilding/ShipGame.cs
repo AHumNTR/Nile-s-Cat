@@ -13,7 +13,7 @@ public class ShipGame : MonoBehaviour
     float Points;
     
     private void Start() {
-        //shipIndex=GameData.day;
+        shipIndex=GameData.day;
         ships[shipIndex].gameObject.SetActive(true);
         ships[shipIndex].shipParts[0].GetComponent<SpriteRenderer>().enabled=true;
     }
