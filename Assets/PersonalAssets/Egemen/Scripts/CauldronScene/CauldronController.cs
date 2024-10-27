@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class CauldronController : MonoBehaviour
 {
-    [SerializeField] public FadeText infoText;
+    public FadeText infoText;
     [SerializeField] private string sceneNameToGo;
     [SerializeField] private float timeInSeconds;
     [SerializeField] private TextMeshProUGUI timeText;
