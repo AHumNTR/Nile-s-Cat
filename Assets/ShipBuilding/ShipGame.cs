@@ -32,6 +32,7 @@ public class ShipGame : MonoBehaviour
         if(ships[shipIndex].shipParts[shipPartIndex].transform.position.x>5&&moveSpeed>0)moveSpeed*=-1;
         else if(ships[shipIndex].shipParts[shipPartIndex].transform.position.x<-5&& moveSpeed<0)moveSpeed*=-1;
         if(Input.GetButtonDown("Jump") || Input.GetMouseButtonDown(0)) {
+            AudioManager.Instance.PlayButtonSound(2);
             if(shipPartIndex>0){
                 float pointsToAdd=calculatePoints();
                 if(pointsToAdd>0.9/(ships[shipIndex].shipParts.Count-1)){

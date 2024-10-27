@@ -127,7 +127,7 @@ public class GemiScript : MonoBehaviour
     public void GameOver()
     {
         // Play Animation
-
+        Reincarnate.deathMessage = "You have crashed our ship.";
         SceneManager.LoadScene("GameOver");
     }
 

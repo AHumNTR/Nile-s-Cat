@@ -18,10 +18,12 @@ public class mainmenuScript : MonoBehaviour
     public void OnStartButtonPressed()
     {
         SceneManager.LoadScene("CustomerScene");
+        AudioManager.Instance.StopMusic();
     }
 
     public void QuitButtonPressed()
     {
+        AudioManager.Instance.StopMusic();
         Application.Quit();
     }
 }
