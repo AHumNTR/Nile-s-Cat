@@ -3,7 +3,8 @@ using UnityEngine;
 public static class GameData
 {
     public static Color mixtureColor;
-    public static int Day;
+    public static int Day=1;
+    public static int selectedShip;
     
     
     public static float Steering = 0.64f; 
