@@ -4,7 +4,7 @@ public static class GameData
 {
     public static Color mixtureColor;
     public static int Day=1;
-    public static int selectedShip;
+    public static int selectedShip = 2;
     
     
     public static float Steering = 0.64f; 
