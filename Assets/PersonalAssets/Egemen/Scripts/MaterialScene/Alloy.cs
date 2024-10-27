@@ -8,13 +8,14 @@ public class Alloy : MonoBehaviour
     [SerializeField] private Color color;
     
     private int _durabilityValue;
+    private int _alloySpeed;
     
     private void Start()
     {
-        AssignAlloyDurabilityValues(); 
+        AssignAlloyValues(); 
     }
 
-    private void AssignAlloyDurabilityValues()
+    private void AssignAlloyValues()
     {
         _durabilityValue = alloyName switch
         {
@@ -22,6 +23,14 @@ public class Alloy : MonoBehaviour
             "Iron" => GameData.IronDurability,
             "Crystal" => GameData.CrystalDurability,
             _ => _durabilityValue
+        };
+
+        _alloySpeed = alloyName switch
+        {
+            "Wood" => GameData.WoodSpeed,
+            "Iron" => GameData.IronSpeed,
+            "Crystal" => GameData.CrystalSpeed,
+            _ => _alloySpeed
         };
     }
     public void OnAddButtonPressed()
