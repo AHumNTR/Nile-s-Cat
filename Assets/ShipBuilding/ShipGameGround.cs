@@ -8,7 +8,6 @@ public class ShipGameGround : MonoBehaviour
         if(other.transform.tag!="FirstShipPart"){
 
             GameData.Day=0;
-            GameData.money=0;
             GameData.Steering=0;
             fadeText.fadeInText(2);
             Invoke("loadFirstScene",5);

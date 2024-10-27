@@ -51,10 +51,10 @@ public class CauldronController : MonoBehaviour
                  if(!_cauldrons[1].isSuccess){
                     GameData.Steering -= GameData.IronDurability * .1f;
                     _cauldrons[1].backGround.color= Color.red;
-                }
-                else{
-                    _cauldrons[1].backGround.color= Color.green;
-                }
+                 }
+                 else{
+                     _cauldrons[1].backGround.color= Color.green;
+                 }
             }
             
             if (_cauldrons[2].gameObject.activeSelf)
@@ -68,7 +68,7 @@ public class CauldronController : MonoBehaviour
                 }
             }
             enabled=false;
-            Invoke("NextScene",3);
+            Invoke(nameof(NextScene),3);
         }
     }
 
@@ -76,17 +76,17 @@ public class CauldronController : MonoBehaviour
     {
         if (_cauldrons[0].gameObject.activeSelf && !_cauldrons[0].isSuccess)
         {
-            GameData.Steering -= GameData.WoodDurability * .1f;
+            GameData.Durability -= GameData.WoodDurability * .1f;
         }
         
         if (_cauldrons[1].gameObject.activeSelf && !_cauldrons[1].isSuccess)
         {
-            GameData.Steering -= GameData.IronDurability * .1f;
+            GameData.Durability -= GameData.IronDurability * .1f;
         }
         
         if (_cauldrons[2].gameObject.activeSelf && !_cauldrons[2].isSuccess)
         {
-            GameData.Steering -= GameData.CrystalDurability * .1f;
+            GameData.Durability -= GameData.CrystalDurability * .1f;
         }
 
         SceneManager.LoadScene("ShipBuildingScene");

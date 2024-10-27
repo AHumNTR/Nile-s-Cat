@@ -9,6 +9,7 @@ public class Alloy : MonoBehaviour
     
     private int _durabilityValue;
     private int _alloySpeed;
+    private int _alloyWeight;
     
     private void Start()
     {
@@ -32,10 +33,18 @@ public class Alloy : MonoBehaviour
             "Crystal" => GameData.CrystalSpeed,
             _ => _alloySpeed
         };
+        
+        _alloyWeight = alloyName switch
+        {
+            "Wood" => GameData.WoodWeight,
+            "Iron" => GameData.IronWeight,
+            "Crystal" => GameData.CrystalWeight,
+            _ => _alloyWeight
+        };
     }
     public void OnAddButtonPressed()
     {
-        AlloyBottomDots.Instance.IncreaseDot(color, _durabilityValue);
+        AlloyBottomDots.Instance.IncreaseDot(color, _durabilityValue, _alloySpeed, _alloyWeight);
         if (AlloyBottomDots.Instance.isPressable)
         {
             AssignAlloysToGameData();
@@ -44,7 +53,7 @@ public class Alloy : MonoBehaviour
     
     public void OnRemoveButtonPressed()
     {
-        AlloyBottomDots.Instance.DecreaseDot(color, _durabilityValue);
+        AlloyBottomDots.Instance.DecreaseDot(color, _durabilityValue, _alloySpeed, _alloyWeight);
         UnassignAlloyFromGameData();
     }
 

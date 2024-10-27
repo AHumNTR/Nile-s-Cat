@@ -25,6 +25,8 @@ public class Scheme : MonoBehaviour
     
     public Image mainSchemeImage;
     
+    public int selectedSchemeIndex = 3;
+    
     private Button[] _schemeSelectButtons;
 
     private void Start()
@@ -42,6 +44,7 @@ public class Scheme : MonoBehaviour
 
     public void OnSchemeSelectButtonPressed(int index)
     {
+        selectedSchemeIndex = index;
         if (_schemeSelectButtons[index].image.color == Color.white)
         {
             mainSchemeImage.sprite = _schemeSelectButtons[index].image.sprite;
