@@ -2407,7 +2407,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneNameToGo: ShipBuildingScene
-  timeInSeconds: 16
+  timeInSeconds: 10
   timeText: {fileID: 1581195009}
 --- !u!1 &1359370831
 GameObject:

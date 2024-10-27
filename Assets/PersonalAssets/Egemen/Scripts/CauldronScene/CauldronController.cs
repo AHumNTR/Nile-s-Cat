@@ -57,7 +57,7 @@ public class CauldronController : MonoBehaviour
                 }
             }
             
-            if (_cauldrons[2].gameObject.activeSelf )
+            if (_cauldrons[2].gameObject.activeSelf)
             {
                 if(!_cauldrons[2].isSuccess){
                     GameData.shipCondition -= GameData.CrystalDurability * .1f;
