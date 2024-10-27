@@ -37,7 +37,7 @@ public class GemiScript : MonoBehaviour
         calculateSteering();
         calculateDurability();
 
-        forwardSpeed = GameData.Speed / 200f;
+        forwardSpeed = GameData.Speed / 20f;
     }
 
     public void StartShip()
