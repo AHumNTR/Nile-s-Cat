@@ -22,6 +22,14 @@ public class AudioManager : MonoBehaviour
 
     #endregion
     
-    [SerializeField] private AudioClip[] audioClips;
-    
+    public Sound[] Sounds;
+    private AudioSource _audioSource;
+
+    public void PlayButtonSound(string soundName)
+    {
+        var sound = Array.Find(Sounds, sound1 => sound1.name == soundName);
+
+        _audioSource.clip = sound.audioClip;
+        _audioSource.Play();
+    }
 }

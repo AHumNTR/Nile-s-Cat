@@ -16,7 +16,7 @@ public class ShipGame : MonoBehaviour
     public FadeText perfectText, startInfoText;
     
     private void Start() {
-        shipIndex=GameData.Day;
+        shipIndex=GameData.selectedShip;
         ships[shipIndex].gameObject.SetActive(true);
         ships[shipIndex].shipParts[0].GetComponent<SpriteRenderer>().enabled=true;
         startInfoText.fadeWaitThenOutText(2f,2f);

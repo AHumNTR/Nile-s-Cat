@@ -54,29 +54,30 @@ public class PrepareButton : MonoBehaviour
     {
         // if (totalDurabilityToChange == 0 || Scheme.Instance.mainSchemeImage.sprite == null ||
         //     !CheckValuesForShip1() || !CheckValuesForShip2() || !CheckValuesForShip3()) return;
-
-        switch (GameData.Day)
+        switch (Scheme.Instance.selectedSchemeIndex)
         {
             case 0 when totalDurabilityToChange != 0 && Scheme.Instance.mainSchemeImage.sprite != null &&
                         CheckValuesForShip1():
                 
                 SetValuesForGameData();
                 Debug.Log(totalDurabilityToChange);
-
+                GameData.selectedShip=0;
                 SceneManager.LoadScene($"{sceneToGo}");
                 break;
             case 1 when totalDurabilityToChange != 0 && Scheme.Instance.mainSchemeImage.sprite != null &&
-                        CheckValuesForShip1():
+                        CheckValuesForShip2():
                 
                 SetValuesForGameData();
+                GameData.selectedShip=1;
                 Debug.Log(totalDurabilityToChange);
 
                 SceneManager.LoadScene($"{sceneToGo}");
                 break;
             case 2 when totalDurabilityToChange != 0 && Scheme.Instance.mainSchemeImage.sprite != null &&
-                        CheckValuesForShip1():
+                        CheckValuesForShip3():
                 
                 SetValuesForGameData();
+                GameData.selectedShip=2;
                 Debug.Log(totalDurabilityToChange);
 
                 SceneManager.LoadScene($"{sceneToGo}");

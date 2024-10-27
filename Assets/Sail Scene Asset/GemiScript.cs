@@ -134,7 +134,13 @@ public class GemiScript : MonoBehaviour
     public void nextLevel()
     {
         nextLevelCalled = true;
-
+        
+        if(GameData.selectedShip!=GameData.Day)
+        {
+            Reincarnate.deathMessage="You delivered the wrong ship scheme";
+            SceneManager.LoadScene("GameOver");
+            return;
+        }
         GameData.Day++;
         if(GameData.Day==3) SceneManager.LoadScene("WinScreen");
         else SceneManager.LoadScene("CustomerScene");
