@@ -134,7 +134,8 @@ public class GemiScript : MonoBehaviour
         nextLevelCalled = true;
 
         GameData.Day++;
-        SceneManager.LoadScene("CustomerScene");
+        if(GameData.Day==3) SceneManager.LoadScene("WinScreen");
+        else SceneManager.LoadScene("CustomerScene");
     }
 
     private void calculateSteering()

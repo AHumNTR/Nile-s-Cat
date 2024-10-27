@@ -19,6 +19,7 @@ public class PlayerCustomerInterraction : MonoBehaviour
     }
     public void resetRun(){
         GameData.Day=0;
+        Reincarnate.deathMessage="You can't just simply refuse gods";
         SceneManager.LoadScene("GameOver");
     }
     public void accept(){
