@@ -19,7 +19,7 @@ public static class GameData
     public static int IronCount;
     public static readonly int IronDurability = 10;
     public static readonly int IronSpeed = 5;
-    public static readonly int IronWeight = 200;
+    public static readonly int IronWeight = 150;
     public static int CrystalCount;
     public static readonly int CrystalDurability = 20;
     public static readonly int CrystalSpeed = 10;
@@ -28,4 +28,23 @@ public static class GameData
     public static bool IsWoodInCauldron;
     public static bool IsCrystalInCauldron;
     public static bool IsIronInCauldron;
+    
+    public class Ship1
+    {
+        public static readonly float NeededDurability = 55;
+        public static readonly float NeededSpeed = 80;
+        public static readonly float NeededWeight = 350;
+    }
+    public class Ship2
+    {
+        public static readonly float NeededDurability = 65;
+        public static readonly float NeededSpeed = 50;
+        public static readonly float NeededWeight = 550;
+    }
+    public class Ship3
+    {
+        public static readonly float NeededDurability = 80;
+        public static readonly float NeededSpeed = 40;
+        public static readonly float NeededWeight = 600;
+    }
 }

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 5baebc5d8b3030d4fb7600e6e7ada7a3
+guid: aa5624050c598814ab5b3202c04f5156
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3221730650569617915
-    second: shippart 4_0
+      213: -4680693281735209178
+    second: fire button_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: shippart 4_0
+      name: fire button_0
       rect:
         serializedVersion: 2
-        x: 496
-        y: 581
-        width: 673
-        height: 233
+        x: 0
+        y: 0
+        width: 256
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bf1b03d05f2e5bc20800000000000000
-      internalID: 3221730650569617915
+      spriteID: 62f8d977246da0fb0800000000000000
+      internalID: -4680693281735209178
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      shippart 4_0: 3221730650569617915
+      fire button_0: -4680693281735209178
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

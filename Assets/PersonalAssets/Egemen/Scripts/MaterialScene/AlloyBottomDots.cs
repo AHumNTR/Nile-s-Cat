@@ -27,7 +27,7 @@ public class AlloyBottomDots : MonoBehaviour
     
     [SerializeField] private GameObject[] dotObjects;
 
-    public void IncreaseDot(Color color, int valueToChange)
+    public void IncreaseDot(Color color, int durabilityToChange, int speedToChange, int weightToChange)
     {
         foreach (var dotObject in dotObjects)
         {
@@ -35,7 +35,9 @@ public class AlloyBottomDots : MonoBehaviour
             if (tempImage.color.a == 0)
             {
                 tempImage.color = color;
-                PrepareButton.Instance.totalDurabilityToChange += valueToChange;
+                PrepareButton.Instance.totalDurabilityToChange += durabilityToChange;
+                PrepareButton.Instance.totalSpeedToChange += speedToChange;
+                PrepareButton.Instance.totalWeightToChange += weightToChange;
                 isPressable = true;
                 return;
             }
@@ -43,12 +45,15 @@ public class AlloyBottomDots : MonoBehaviour
         }
     }
     
-    public void DecreaseDot(Color color, int valueToChange)
+    public void DecreaseDot(Color color, int durabilityToChange, int speedToChange, int weightToChange)
     {
-        bool removedDot=false;
-        for(int i =0;i<dotObjects.Length;i++){
+        var removedDot = false;
+        for(var i = 0; i < dotObjects.Length; i++)
+        {
             var tempImage = dotObjects[i].GetComponent<Image>();
-            if(removedDot&&i<dotObjects.Length-1){
+            
+            if(removedDot && i < dotObjects.Length - 1)
+            {
                 tempImage.GetComponent<Image>().color=dotObjects[i+1].GetComponent<Image>().color;
             }
             if (Mathf.Approximately(tempImage.color.a, 1) && tempImage.color == color&&!removedDot)
@@ -57,8 +62,11 @@ public class AlloyBottomDots : MonoBehaviour
                 imageColor.a = 0;
                 tempImage.color = imageColor;
                 
-                PrepareButton.Instance.totalDurabilityToChange -= valueToChange;
-                removedDot=true;
+                PrepareButton.Instance.totalDurabilityToChange -= durabilityToChange;
+                PrepareButton.Instance.totalSpeedToChange -= speedToChange;
+                PrepareButton.Instance.totalWeightToChange -= weightToChange;
+                
+                removedDot = true;
                 if(i==dotObjects.Length-1) dotObjects[dotObjects.Length-1].GetComponent<Image>().color=Color.clear;
                 else tempImage.GetComponent<Image>().color=dotObjects[i+1].GetComponent<Image>().color;
             }
