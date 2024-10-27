@@ -12,10 +12,27 @@ public class FadeText : MonoBehaviour
     public void fadeInText(float speed){
         StartCoroutine(fadeIntextCoroutine(speed));
     }
+    public void fadeInThenOutText(float speed,float waitTime){
+        StopAllCoroutines();
+        StartCoroutine(fadeInThenOutCoroutine(speed,waitTime));
+    }
     IEnumerator fadeIntextCoroutine(float speed){
         while(text.alpha<=1)
         {
             text.alpha+=speed*Interval;
+            yield return new WaitForSeconds(Interval);
+        }
+    }
+    IEnumerator fadeInThenOutCoroutine(float speed,float waitTime){
+        while(text.alpha<=1)
+        {
+            text.alpha+=speed*Interval;
+            yield return new WaitForSeconds(Interval);
+        }
+        yield return new WaitForSeconds(waitTime);
+        while(text.alpha>=0)
+        {
+            text.alpha-=speed*Interval;
             yield return new WaitForSeconds(Interval);
         }
     }
