@@ -44,9 +44,11 @@ public class Scheme : MonoBehaviour
 
     public void OnSchemeSelectButtonPressed(int index)
     {
-        selectedSchemeIndex = index;
+        
         if (_schemeSelectButtons[index].image.color == Color.white)
         {
+            // AlloyStatHandler.Instance.SetSliderValues(index);
+            selectedSchemeIndex = index;
             mainSchemeImage.sprite = _schemeSelectButtons[index].image.sprite;
         
             if (Mathf.Approximately(mainSchemeImage.color.a, 0))
