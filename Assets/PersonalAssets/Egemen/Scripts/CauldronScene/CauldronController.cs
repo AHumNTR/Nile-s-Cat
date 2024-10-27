@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class CauldronController : MonoBehaviour
 {
+    [SerializeField] public FadeText infoText;
     [SerializeField] private string sceneNameToGo;
     [SerializeField] private float timeInSeconds;
     [SerializeField] private TextMeshProUGUI timeText;
@@ -14,6 +15,8 @@ public class CauldronController : MonoBehaviour
     
     private void Start()
     {
+        infoText.fadeWaitThenOutText(2f,2f);
+
         _cauldrons = GetComponentsInChildren<Cauldron>(true);
 
         if (GameData.IsWoodInCauldron)
