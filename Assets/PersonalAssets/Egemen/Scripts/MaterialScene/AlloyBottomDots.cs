@@ -64,6 +64,6 @@ public class AlloyBottomDots : MonoBehaviour
             }
             
         }
-        dotObjects[dotObjects.Length-1].GetComponent<Image>().color=Color.clear;
+        if(removedDot) dotObjects[dotObjects.Length-1].GetComponent<Image>().color=Color.clear;
     }
 }
