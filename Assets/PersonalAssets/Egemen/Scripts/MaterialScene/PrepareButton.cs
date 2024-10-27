@@ -52,8 +52,7 @@ public class PrepareButton : MonoBehaviour
     }
     public void OnPrepareButtonPressed()
     {
-        // if (totalDurabilityToChange == 0 || Scheme.Instance.mainSchemeImage.sprite == null ||
-        //     !CheckValuesForShip1() || !CheckValuesForShip2() || !CheckValuesForShip3()) return;
+        AudioManager.Instance.PlayButtonSound(0);
         switch (Scheme.Instance.selectedSchemeIndex)
         {
             case 0 when totalDurabilityToChange != 0 && Scheme.Instance.mainSchemeImage.sprite != null &&
