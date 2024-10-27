@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
@@ -32,7 +33,8 @@ public class CauldronController : MonoBehaviour
     private void Update()
     {
         timeInSeconds -= Time.deltaTime;
-        timeText.text = $"{(int)timeInSeconds}";
+        // timeText.text = $"{(int)timeInSeconds}";
+        timeText.text = $"{(int)timeInSeconds}" + ":" + Convert.ToString(100f*((Mathf.Round(timeInSeconds * 100f) / 100f) - (int)(timeInSeconds)));
         if (timeInSeconds <= 0)
         {
             if (_cauldrons[0].gameObject.activeSelf )
