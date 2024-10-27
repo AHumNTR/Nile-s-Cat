@@ -11,6 +11,7 @@ public class Cauldron : MonoBehaviour
     [SerializeField] private float maxFlame;
     
     private Slider _fireSlider;
+    public Image backGround;
 
     private void Start()
     {
