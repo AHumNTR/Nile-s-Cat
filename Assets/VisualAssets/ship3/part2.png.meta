@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: b83bc124c7871ef40b928cf6af02f03b
+guid: 885b1f63e0730a64ab2c756de2b49eb9
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1016499593558869048
-    second: part1 1_0
-  - first:
-      213: -8375883148071146686
-    second: part1 1_1
+      213: 4473294809306572916
+    second: part2_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -103,45 +100,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: part1 1_0
+      name: part2_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 118
-        height: 109
+        y: 335
+        width: 1500
+        height: 476
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8cb389b510ba4e1f0800000000000000
-      internalID: -1016499593558869048
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: part1 1_1
-      rect:
-        serializedVersion: 2
-        x: 335
-        y: 18
-        width: 919
-        height: 91
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 24be90777a2e2cb80800000000000000
-      internalID: -8375883148071146686
+      spriteID: 4782154bde5541e30800000000000000
+      internalID: 4473294809306572916
       vertices: []
       indices: 
       edges: []
@@ -150,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 32fcae950e86f144f9675cb053e2d087
     internalID: 0
     vertices: []
     indices: 
@@ -160,8 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      part1 1_0: -1016499593558869048
-      part1 1_1: -8375883148071146686
+      part2_0: 4473294809306572916
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

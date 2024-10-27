@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -32,14 +33,46 @@ public class CauldronController : MonoBehaviour
     {
         timeInSeconds -= Time.deltaTime;
         timeText.text = $"{(int)timeInSeconds}";
-
         if (timeInSeconds <= 0)
         {
-            NextScene(sceneNameToGo);
+            if (_cauldrons[0].gameObject.activeSelf )
+            {
+                if(!_cauldrons[0].isSuccess){
+                    GameData.shipCondition -= GameData.WoodDurability * .1f;
+                    _cauldrons[0].backGround.color= Color.red;
+                }
+                else{
+                    _cauldrons[0].backGround.color= Color.green;
+                }
+            }
+            
+            if (_cauldrons[1].gameObject.activeSelf )
+            {
+                 if(!_cauldrons[1].isSuccess){
+                    GameData.shipCondition -= GameData.IronDurability * .1f;
+                    _cauldrons[1].backGround.color= Color.red;
+                }
+                else{
+                    _cauldrons[1].backGround.color= Color.green;
+                }
+            }
+            
+            if (_cauldrons[2].gameObject.activeSelf )
+            {
+                if(!_cauldrons[2].isSuccess){
+                    GameData.shipCondition -= GameData.CrystalDurability * .1f;
+                    _cauldrons[2].backGround.color= Color.red;
+                }
+                else{
+                    _cauldrons[2].backGround.color= Color.green;
+                }
+            }
+            enabled=false;
+            Invoke("NextScene",3);
         }
     }
 
-    private void NextScene(string sceneName)
+    private void NextScene()
     {
         if (_cauldrons[0].gameObject.activeSelf && !_cauldrons[0].isSuccess)
         {
@@ -56,6 +89,6 @@ public class CauldronController : MonoBehaviour
             GameData.shipCondition -= GameData.CrystalDurability * .1f;
         }
 
-        SceneManager.LoadScene($"{sceneName}");
+        SceneManager.LoadScene("ShipBuildingScene");
     }
 }
