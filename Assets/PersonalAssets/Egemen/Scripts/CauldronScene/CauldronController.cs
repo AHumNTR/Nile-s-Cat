@@ -37,6 +37,7 @@ public class CauldronController : MonoBehaviour
         timeText.text = $"{(int)timeInSeconds}" + ":" + Convert.ToString(100f*((Mathf.Round(timeInSeconds * 100f) / 100f) - (int)(timeInSeconds)));
         if (timeInSeconds <= 0)
         {
+            timeText.text = "00:00";
             if (_cauldrons[0].gameObject.activeSelf )
             {
                 if(!_cauldrons[0].isSuccess){

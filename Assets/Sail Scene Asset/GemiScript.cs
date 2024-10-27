@@ -36,6 +36,8 @@ public class GemiScript : MonoBehaviour
         turnSpeed = baseTurnSpeed;
         calculateSteering();
         calculateDurability();
+
+        forwardSpeed = GameData.Speed / 200f;
     }
 
     public void StartShip()
@@ -159,17 +161,18 @@ public class GemiScript : MonoBehaviour
 
     private void calculateDurability()
     {
-        float durability = GameData.Durability;
+        float durability = GameData.Durability / 100f;
+
         healthBar.GetComponent<Slider>().maxValue = maxCollision;
         healthBar.GetComponent<Slider>().value = maxCollision;
 
-        if (durability < 0.5f)
+        if (durability < 0.55f)
         {
             maxCollision = 2;
             return;
         }
 
-        if (durability < 0.75f)
+        if (durability < 0.68f)
         {
             maxCollision = 3;
             return;

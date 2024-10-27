@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      kazan_bg_0: -8071695920654558433
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
