@@ -28,10 +28,10 @@ public class ShipGame : MonoBehaviour
         ships[shipIndex].shipParts[shipPartIndex].transform.position+=Vector3.right*moveSpeed*Time.deltaTime;
         if(ships[shipIndex].shipParts[shipPartIndex].transform.position.x>5&&moveSpeed>0)moveSpeed*=-1;
         else if(ships[shipIndex].shipParts[shipPartIndex].transform.position.x<-5&& moveSpeed<0)moveSpeed*=-1;
-        if(Input.GetButtonDown("Jump")){
+        if(Input.GetButtonDown("Jump") || Input.GetMouseButtonDown(0)) {
             if(shipPartIndex>0){
                 Points+=calculatePoints();
-                scoreText.text=Points.ToString();
+                scoreText.text= "Score: " + (Mathf.Round(Points * 100) / 10 ).ToString();
             }
             ships[shipIndex].shipParts[shipPartIndex].GetComponent<Rigidbody2D>().simulated=true;
             if(shipPartIndex+1<ships[shipIndex].shipParts.Count){
