@@ -1,7 +1,6 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
-public class mainmenuScript : MonoBehaviour
+public class WinScreenScript : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -13,11 +12,6 @@ public class mainmenuScript : MonoBehaviour
     void Update()
     {
         
-    }
-
-    public void OnStartButtonPressed()
-    {
-        SceneManager.LoadScene("CustomerScene");
     }
 
     public void QuitButtonPressed()
