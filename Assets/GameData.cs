@@ -7,9 +7,9 @@ public static class GameData
     
     
     public static float Steering = 0.64f; 
-    public static float Durability;
+    public static float Durability = 0.80f;
     public static float Speed;
-    public static float Weight;
+    public static float Weight = 500;
     
     
     public static int WoodCount;
