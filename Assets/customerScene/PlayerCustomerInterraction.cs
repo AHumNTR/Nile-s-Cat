@@ -20,7 +20,7 @@ public class PlayerCustomerInterraction : MonoBehaviour
     }
     public void resetRun(){
         GameData.Day=0;
-        Reincarnate.deathMessage="You can't just simply refuse gods";
+        Reincarnate.deathMessage="It isn't a good idea to refuse a gods order";
         SceneManager.LoadScene("GameOver");
     }
     public void accept()
