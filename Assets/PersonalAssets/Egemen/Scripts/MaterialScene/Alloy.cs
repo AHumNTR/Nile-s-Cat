@@ -1,14 +1,32 @@
+using System;
 using UnityEngine;
 
 public class Alloy : MonoBehaviour
 {
     public string alloyName;
-    public int durabilityValue;
+    
     [SerializeField] private Color color;
+    
+    private int _durabilityValue;
+    
+    private void Start()
+    {
+        AssignAlloyDurabilityValues();
+    }
 
+    private void AssignAlloyDurabilityValues()
+    {
+        _durabilityValue = alloyName switch
+        {
+            "Wood" => GameData.WoodDurability,
+            "Iron" => GameData.IronDurability,
+            "Crystal" => GameData.CrystalDurability,
+            _ => _durabilityValue
+        };
+    }
     public void OnAddButtonPressed()
     {
-        AlloyBottomDots.Instance.IncreaseDot(color, durabilityValue);
+        AlloyBottomDots.Instance.IncreaseDot(color, _durabilityValue);
         if (AlloyBottomDots.Instance.isPressable)
         {
             AssignAlloysToGameData();
@@ -17,7 +35,7 @@ public class Alloy : MonoBehaviour
     
     public void OnRemoveButtonPressed()
     {
-        AlloyBottomDots.Instance.DecreaseDot(color, durabilityValue);
+        AlloyBottomDots.Instance.DecreaseDot(color, _durabilityValue);
         UnassignAlloyFromGameData();
     }
 
@@ -29,16 +47,16 @@ public class Alloy : MonoBehaviour
             GameData.WoodCount++;
         }
 
-        if (alloyName == "Crystal")
-        {
-            GameData.IsCrystalInCauldron = true;
-            GameData.CrystalCount++;
-        }
-
         if (alloyName == "Iron")
         {
             GameData.IsIronInCauldron = true;
             GameData.IronCount++;
+        }
+        
+        if (alloyName == "Crystal")
+        {
+            GameData.IsCrystalInCauldron = true;
+            GameData.CrystalCount++;
         }
     }
 

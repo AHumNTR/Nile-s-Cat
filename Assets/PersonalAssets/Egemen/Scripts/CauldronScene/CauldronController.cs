@@ -32,25 +32,28 @@ public class CauldronController : MonoBehaviour
     {
         timeInSeconds -= Time.deltaTime;
         timeText.text = $"{(int)timeInSeconds}";
-        
-        NextScene(sceneNameToGo);
+
+        if (timeInSeconds <= 0)
+        {
+            NextScene(sceneNameToGo);
+        }
     }
 
     private void NextScene(string sceneName)
     {
         if (_cauldrons[0].gameObject.activeSelf && !_cauldrons[0].isSuccess)
         {
-            GameData.shipCondition -= GameData.WoodDurability;
+            GameData.shipCondition -= GameData.WoodDurability * .1f;
         }
         
         if (_cauldrons[1].gameObject.activeSelf && !_cauldrons[1].isSuccess)
         {
-            GameData.shipCondition -= GameData.IronDurability;
+            GameData.shipCondition -= GameData.IronDurability * .1f;
         }
         
         if (_cauldrons[2].gameObject.activeSelf && !_cauldrons[2].isSuccess)
         {
-            GameData.shipCondition -= GameData.CrystalDurability;
+            GameData.shipCondition -= GameData.CrystalDurability * .1f;
         }
 
         SceneManager.LoadScene($"{sceneName}");

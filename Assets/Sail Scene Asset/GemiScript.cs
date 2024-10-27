@@ -2,6 +2,7 @@ using TMPro;
 using UnityEngine;
 using System.Collections;
 using System.Threading;
+using UnityEngine.SceneManagement;
 
 
 public class GemiScript : MonoBehaviour
@@ -112,22 +113,17 @@ public class GemiScript : MonoBehaviour
 
     public void GameOver()
     {
-        // Transition to the game over scene
         // Play Animation
-        Debug.Log("game over  no no no no o");
 
-
-        // Destroy(gameObject);
+        SceneManager.LoadScene("GameOver");
     }
 
     public void nextLevel()
     {
-        // Transition Scene to the next level
-        Debug.Log("next level go go go");
         nextLevelCalled = true;
 
-
-        // Destroy(gameObject);
+        GameData.day++;
+        SceneManager.LoadScene("CustomerScene");
     }
 
     private void calculateSteering()

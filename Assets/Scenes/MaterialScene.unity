@@ -207,7 +207,7 @@ GameObject:
   - component: {fileID: 129659967}
   - component: {fileID: 129659966}
   m_Layer: 5
-  m_Name: Alloy_2 - Iron
+  m_Name: Alloy_1 - Iron
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -246,8 +246,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4d5e9bedd1aefc40869eabf94cb4cf7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  alloyName: 
-  durabilityValue: 20
+  alloyName: Iron
   color: {r: 0.5975055, g: 0.5582503, b: 0.6132076, a: 1}
 --- !u!114 &129659967
 MonoBehaviour:
@@ -2231,7 +2230,7 @@ GameObject:
   - component: {fileID: 1197817071}
   - component: {fileID: 1197817074}
   m_Layer: 5
-  m_Name: Alloy_1 - Crystal
+  m_Name: Alloy_2 - Crystal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2270,8 +2269,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4d5e9bedd1aefc40869eabf94cb4cf7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  alloyName: 
-  durabilityValue: 10
+  alloyName: Crystal
   color: {r: 0.7019608, g: 0.20784314, b: 0.8980392, a: 1}
 --- !u!114 &1197817072
 MonoBehaviour:
@@ -2485,8 +2483,8 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1781784089}
-  - {fileID: 1197817070}
   - {fileID: 129659965}
+  - {fileID: 1197817070}
   - {fileID: 939630962}
   m_Father: {fileID: 891196798}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2804,7 +2802,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   totalDurabilityToChange: 0
-  sceneToGo: 
+  sceneToGo: CauldronScene
 --- !u!1 &1660963843
 GameObject:
   m_ObjectHideFlags: 0
@@ -2970,8 +2968,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4d5e9bedd1aefc40869eabf94cb4cf7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  alloyName: 
-  durabilityValue: 5
+  alloyName: Wood
   color: {r: 0.6784314, g: 0.32156864, b: 0.09411765, a: 1}
 --- !u!1 &1884439405
 GameObject:

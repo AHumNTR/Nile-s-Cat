@@ -17,12 +17,12 @@ public class PlayerCustomerInterraction : MonoBehaviour
     public void refuse(){
         Invoke("resetRun",4);
     }
-    void resetRun(){
+    public void resetRun(){
         GameData.day=0;
-        SceneManager.LoadScene("CustomerScene");
+        SceneManager.LoadScene("GameOver");
     }
     public void accept(){
-        SceneManager.LoadScene("MaterialScene(Egemen)");
+        SceneManager.LoadScene("MaterialScene");
     }
     void Start()
     {

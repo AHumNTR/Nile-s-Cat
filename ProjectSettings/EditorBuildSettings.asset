@@ -5,9 +5,30 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/Scenes/StartMenu.unity
+    guid: b05e43e7e40ba874b90b3bf6fac7837f
+  - enabled: 1
+    path: Assets/Scenes/CustomerScene.unity
+    guid: 6d79a10aeecb33640abe183df7561c4f
+  - enabled: 1
+    path: Assets/Scenes/MaterialScene.unity
+    guid: 3bccdf95b026a7b40bcfc848144856a4
+  - enabled: 1
+    path: Assets/Scenes/CauldronScene.unity
+    guid: 14036848beafbde4eabb6406f37f12a2
+  - enabled: 1
+    path: Assets/Scenes/ShipBuildingScene.unity
+    guid: 4478ff615985cf04dbf04b500420ac05
+  - enabled: 1
+    path: Assets/Scenes/SailingScene.unity
+    guid: 72288abaccd59d54dac163a15ebea34e
+  - enabled: 1
+    path: Assets/Scenes/GameOver.unity
+    guid: efdd4f9297fa0394e8b1b8ab8173cb3e
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
