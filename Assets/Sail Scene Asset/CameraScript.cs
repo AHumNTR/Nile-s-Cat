@@ -51,10 +51,10 @@ public class CameraScript : MonoBehaviour
 
         // Debug.Log($"Start Position: {startY}, Target Position: {targetY}");
 
-        while (time < 0.7f)
+        while (time < 1.2f)
         {
             time += Time.deltaTime;
-            float newY = Mathf.Lerp(startY, targetY, time/0.7f);
+            float newY = Mathf.Lerp(startY, targetY, time/1.2f);
             transform.position =  new Vector3(transform.position.x, newY, transform.position.z);
             yield return null;
         }

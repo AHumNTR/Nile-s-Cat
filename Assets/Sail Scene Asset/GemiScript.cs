@@ -3,6 +3,7 @@ using UnityEngine;
 using System.Collections;
 using System.Threading;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 
 public class GemiScript : MonoBehaviour
@@ -18,7 +19,8 @@ public class GemiScript : MonoBehaviour
     private float turnSpeed;
     private float deceleration = 1;
 
-
+    
+    public GameObject healthBar;
     public GameObject timer;
     public GameObject MainCamera;
     public TextMeshProUGUI text;
@@ -72,10 +74,18 @@ public class GemiScript : MonoBehaviour
     void OnCollisionEnter2D(Collision2D collision)
     {
         noCollisions +=1;
+
         text.GetComponent<CounterScript>().updateCount(noCollisions);
+        healthBar.GetComponent<Slider>().value--;
+
+        if (noCollisions == maxCollision) 
+        {
+            healthBar.GetComponent<Slider>().transform.GetChild(1).transform.GetChild(0).GetComponent<Image>().enabled = false;
+        }
+
         Debug.Log("number of collisions increased to: " + noCollisions);
 
-        if (noCollisions >= maxCollision)
+        if (noCollisions == maxCollision)
         {
             StopShip();
             timer.GetComponent<TimerScript>().gameOverCalled = true;
