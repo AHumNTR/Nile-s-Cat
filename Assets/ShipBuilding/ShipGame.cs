@@ -49,7 +49,7 @@ public class ShipGame : MonoBehaviour
             }
             else{
                 enabled=false;
-                GameData.Steering=Points;
+                GameData.Steering = Points;
 
 
                 ships[shipIndex].shipParts[shipPartIndex-1].transform.GetChild(0).gameObject.SetActive(false);

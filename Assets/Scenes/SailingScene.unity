@@ -226,7 +226,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ccc09fe7c6aa7b49a7dd2129788b157, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxCollision: 3
   forwardSpeed: 3.8
   safeCollisionTime: 1
   healthBar: {fileID: 2093259193}
@@ -1131,7 +1130,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &647786492
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1158,7 +1157,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 647786491}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
@@ -1632,6 +1631,7 @@ MonoBehaviour:
   gemi: {fileID: 50130764}
   Timer: {fileID: 1862299756}
   WindText: {fileID: 272139151}
+  windForce: 1.2
 --- !u!1 &1197616520
 GameObject:
   m_ObjectHideFlags: 0

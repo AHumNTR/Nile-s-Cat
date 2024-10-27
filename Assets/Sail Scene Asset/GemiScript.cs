@@ -9,7 +9,7 @@ using UnityEngine.UI;
 public class GemiScript : MonoBehaviour
 {
 
-    public float maxCollision = 3;
+    private float maxCollision = 5;
 
     public float forwardSpeed;
     public float safeCollisionTime;
@@ -35,6 +35,7 @@ public class GemiScript : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         turnSpeed = baseTurnSpeed;
         calculateSteering();
+        calculateDurability();
     }
 
     public void StartShip()
@@ -148,11 +149,32 @@ public class GemiScript : MonoBehaviour
 
         if (shipCondition < 0.75f)
         {
-            turnSpeed = baseTurnSpeed + 2f * shipCondition;
+            turnSpeed = baseTurnSpeed + 1.5f * shipCondition;
             return;
         }
 
-        turnSpeed = baseTurnSpeed + 4.5f * shipCondition;
+        turnSpeed = baseTurnSpeed + 3.5f * shipCondition;
+    }
+
+    private void calculateDurability()
+    {
+        float durability = GameData.Durability;
+        healthBar.GetComponent<Slider>().maxValue = maxCollision;
+        healthBar.GetComponent<Slider>().value = maxCollision;
+
+        if (durability < 0.5f)
+        {
+            maxCollision = 2;
+            return;
+        }
+
+        if (durability < 0.75f)
+        {
+            maxCollision = 3;
+            return;
+        }
+
+        maxCollision = 4;
     }
 
     private IEnumerator StartShipSmoothly(float targetSpeed, float accelerationTime)

@@ -8,8 +8,8 @@ public class WindScript : MonoBehaviour
 
     public GameObject gemi;
     public GameObject Timer;
-
     public GameObject WindText;
+    public float windForce = 1.2f;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -59,7 +59,8 @@ public class WindScript : MonoBehaviour
         }
 
         int direction = UnityEngine.Random.Range(0, 2) == 0 ? -1 : 1;
-        float amount = UnityEngine.Random.Range(-10f, 10f);
+        float amount = UnityEngine.Random.Range(-10f, 10f) * windForce;
+        if (amount == 0) amount = direction;
 
         Debug.Log("added wind" + direction + amount);
 
@@ -78,6 +79,7 @@ public class WindScript : MonoBehaviour
         }
 
 
+        amount = amount / (GameData.Weight / 250f) ;
         gemi.GetComponent<GemiScript>().addWindForce(direction, amount);
 
     }
