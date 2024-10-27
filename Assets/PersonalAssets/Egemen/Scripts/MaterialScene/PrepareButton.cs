@@ -28,6 +28,8 @@ public class PrepareButton : MonoBehaviour
     
     public void OnPrepareButtonPressed()
     {
+        if (totalDurabilityToChange == 0 || Scheme.Instance.mainSchemeImage.sprite == null) return;
+        
         GameData.shipCondition = totalDurabilityToChange * .1f;
         Debug.Log(totalDurabilityToChange);
 

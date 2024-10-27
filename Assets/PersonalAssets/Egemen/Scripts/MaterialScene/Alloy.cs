@@ -11,7 +11,7 @@ public class Alloy : MonoBehaviour
     
     private void Start()
     {
-        AssignAlloyDurabilityValues();
+        AssignAlloyDurabilityValues(); 
     }
 
     private void AssignAlloyDurabilityValues()
