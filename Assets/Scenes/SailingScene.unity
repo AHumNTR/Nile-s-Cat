@@ -226,7 +226,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ccc09fe7c6aa7b49a7dd2129788b157, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxCollision: 3
   forwardSpeed: 3.8
   safeCollisionTime: 1
   healthBar: {fileID: 2093259193}
@@ -1632,6 +1631,7 @@ MonoBehaviour:
   gemi: {fileID: 50130764}
   Timer: {fileID: 1862299756}
   WindText: {fileID: 272139151}
+  windForce: 1.2
 --- !u!1 &1197616520
 GameObject:
   m_ObjectHideFlags: 0
