@@ -43,6 +43,13 @@ public class PrepareButton : MonoBehaviour
         return totalDurabilityToChange == GameData.Ship3.NeededDurability && 
                totalSpeedToChange == GameData.Ship3.NeededSpeed && totalWeightToChange == GameData.Ship3.NeededWeight;
     }
+
+    private void SetValuesForGameData()
+    {
+        GameData.Durability = totalDurabilityToChange;
+        GameData.Speed = totalSpeedToChange;
+        GameData.Weight = totalDurabilityToChange;
+    }
     public void OnPrepareButtonPressed()
     {
         // if (totalDurabilityToChange == 0 || Scheme.Instance.mainSchemeImage.sprite == null ||
@@ -52,21 +59,24 @@ public class PrepareButton : MonoBehaviour
         {
             case 0 when totalDurabilityToChange != 0 && Scheme.Instance.mainSchemeImage.sprite != null &&
                         CheckValuesForShip1():
-                GameData.Durability = totalDurabilityToChange * .1f;
+                
+                SetValuesForGameData();
                 Debug.Log(totalDurabilityToChange);
 
                 SceneManager.LoadScene($"{sceneToGo}");
                 break;
             case 1 when totalDurabilityToChange != 0 && Scheme.Instance.mainSchemeImage.sprite != null &&
                         CheckValuesForShip1():
-                GameData.Durability = totalDurabilityToChange * .1f;
+                
+                SetValuesForGameData();
                 Debug.Log(totalDurabilityToChange);
 
                 SceneManager.LoadScene($"{sceneToGo}");
                 break;
             case 2 when totalDurabilityToChange != 0 && Scheme.Instance.mainSchemeImage.sprite != null &&
                         CheckValuesForShip1():
-                GameData.Durability = totalDurabilityToChange * .1f;
+                
+                SetValuesForGameData();
                 Debug.Log(totalDurabilityToChange);
 
                 SceneManager.LoadScene($"{sceneToGo}");
