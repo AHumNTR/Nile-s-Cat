@@ -148,11 +148,11 @@ public class GemiScript : MonoBehaviour
 
         if (shipCondition < 0.75f)
         {
-            turnSpeed = baseTurnSpeed + 2f * shipCondition;
+            turnSpeed = baseTurnSpeed + 1.5f * shipCondition;
             return;
         }
 
-        turnSpeed = baseTurnSpeed + 4.5f * shipCondition;
+        turnSpeed = baseTurnSpeed + 3.5f * shipCondition;
     }
 
     private IEnumerator StartShipSmoothly(float targetSpeed, float accelerationTime)

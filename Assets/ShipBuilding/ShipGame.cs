@@ -42,7 +42,7 @@ public class ShipGame : MonoBehaviour
             }
             else{
                 enabled=false;
-                GameData.Steering=Points;
+                GameData.Steering = Points;
 
                 fadeScene.fadeInScene(1);
 
