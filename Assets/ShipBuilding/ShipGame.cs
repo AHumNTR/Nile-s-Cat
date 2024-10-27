@@ -13,12 +13,13 @@ public class ShipGame : MonoBehaviour
     public float moveSpeed=1,penaltyScaling;
     float Points;
     public Vector2 ufoOffset;
-    public FadeText perfectText;
+    public FadeText perfectText, startInfoText;
     
     private void Start() {
         shipIndex=GameData.Day;
         ships[shipIndex].gameObject.SetActive(true);
         ships[shipIndex].shipParts[0].GetComponent<SpriteRenderer>().enabled=true;
+        startInfoText.fadeWaitThenOutText(2f,2f);
     }
     public float calculatePoints(){
         ShipPartConnectionPoint scp=ships[shipIndex].shipParts[shipPartIndex-1].GetComponent<ShipPartConnectionPoint>();
