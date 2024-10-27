@@ -44,7 +44,7 @@ public class Scheme : MonoBehaviour
 
     public void OnSchemeSelectButtonPressed(int index)
     {
-        
+        AudioManager.Instance.PlayButtonSound(6);
         if (_schemeSelectButtons[index].image.color == Color.white)
         {
             // AlloyStatHandler.Instance.SetSliderValues(index);

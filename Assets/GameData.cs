@@ -3,7 +3,7 @@ using UnityEngine;
 public static class GameData
 {
     public static Color mixtureColor;
-    public static int Day;
+    public static int Day=0;
     public static int selectedShip;
     
     

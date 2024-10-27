@@ -44,6 +44,7 @@ public class Alloy : MonoBehaviour
     }
     public void OnAddButtonPressed()
     {
+        AudioManager.Instance.PlayButtonSound(0);
         AlloyBottomDots.Instance.IncreaseDot(color, _durabilityValue, _alloySpeed, _alloyWeight);
         if (AlloyBottomDots.Instance.isPressable)
         {
@@ -53,6 +54,7 @@ public class Alloy : MonoBehaviour
     
     public void OnRemoveButtonPressed()
     {
+        AudioManager.Instance.PlayButtonSound(0);
         AlloyBottomDots.Instance.DecreaseDot(color, _durabilityValue, _alloySpeed, _alloyWeight);
         UnassignAlloyFromGameData();
     }

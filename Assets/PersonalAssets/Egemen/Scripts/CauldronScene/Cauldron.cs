@@ -15,6 +15,7 @@ public class Cauldron : MonoBehaviour
 
     private void Start()
     {
+        AudioManager.Instance.PlayButtonSound(7);
         _fireSlider = GetComponentInChildren<Slider>();
     }
 
@@ -27,6 +28,7 @@ public class Cauldron : MonoBehaviour
 
     public void OnFireButtonPressed()
     {
+        AudioManager.Instance.PlayButtonSound(8);
         _fireSlider.value += flamePower;
     }
     

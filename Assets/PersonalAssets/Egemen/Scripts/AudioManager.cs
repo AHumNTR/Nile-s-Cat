@@ -22,14 +22,34 @@ public class AudioManager : MonoBehaviour
 
     #endregion
     
-    public Sound[] Sounds;
-    private AudioSource _audioSource;
+    public AudioClip[] audioClips;
+    private AudioSource[] _audioSource;
 
-    public void PlayButtonSound(string soundName)
+    private void Start()
     {
-        var sound = Array.Find(Sounds, sound1 => sound1.name == soundName);
+        _audioSource = GetComponents<AudioSource>();
+    }
 
-        _audioSource.clip = sound.audioClip;
-        _audioSource.Play();
+    public void PlayButtonSound(int index)
+    {
+        _audioSource[1].clip = audioClips[index];
+        _audioSource[1].Play();
+    }
+
+    public void PlaySoundEffect(int index)
+    {
+        _audioSource[1].clip = audioClips[index];
+        _audioSource[1].Play();
+    }
+
+    public void PlayMusic(int index)
+    {
+        _audioSource[0].clip = audioClips[index];
+        _audioSource[0].Play();
+    }
+
+    public void StopMusic()
+    {
+        _audioSource[0].Stop();
     }
 }
