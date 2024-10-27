@@ -40,7 +40,7 @@ public class CauldronController : MonoBehaviour
             if (_cauldrons[0].gameObject.activeSelf )
             {
                 if(!_cauldrons[0].isSuccess){
-                    GameData.Steering -= GameData.WoodDurability * .1f;
+                    GameData.Durability -= GameData.WoodDurability * .1f;
                     _cauldrons[0].backGround.color= Color.red;
                 }
                 else{
@@ -51,7 +51,7 @@ public class CauldronController : MonoBehaviour
             if (_cauldrons[1].gameObject.activeSelf )
             {
                  if(!_cauldrons[1].isSuccess){
-                    GameData.Steering -= GameData.IronDurability * .1f;
+                    GameData.Durability -= GameData.IronDurability * .1f;
                     _cauldrons[1].backGround.color= Color.red;
                  }
                  else{
@@ -62,7 +62,7 @@ public class CauldronController : MonoBehaviour
             if (_cauldrons[2].gameObject.activeSelf)
             {
                 if(!_cauldrons[2].isSuccess){
-                    GameData.Steering -= GameData.CrystalDurability * .1f;
+                    GameData.Durability -= GameData.CrystalDurability * .1f;
                     _cauldrons[2].backGround.color= Color.red;
                 }
                 else{
