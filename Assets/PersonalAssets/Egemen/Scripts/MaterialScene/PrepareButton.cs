@@ -49,6 +49,9 @@ public class PrepareButton : MonoBehaviour
         GameData.Durability = totalDurabilityToChange;
         GameData.Speed = totalSpeedToChange;
         GameData.Weight = totalDurabilityToChange;
+        for(int i =0;i<5;i++){
+
+        }
     }
     public void OnPrepareButtonPressed()
     {

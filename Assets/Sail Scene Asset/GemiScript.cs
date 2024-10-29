@@ -29,9 +29,14 @@ public class GemiScript : MonoBehaviour
     public bool shipStopped = false;
     public bool startTimer = false;
     public bool nextLevelCalled = false;
+    public float mobileInputXValue=0;
+    public void addToTheMobileInputXValue(float x){
+        mobileInputXValue+=x;
+    }
 
     void Start()
     {
+        
         rb = GetComponent<Rigidbody2D>();
         turnSpeed = baseTurnSpeed;
         calculateSteering();
@@ -63,7 +68,7 @@ public class GemiScript : MonoBehaviour
         {
             rb.linearVelocity = transform.up * forwardSpeed;
 
-            float horizontalInput = Input.GetAxis("Horizontal");
+            float horizontalInput = Input.GetAxis("Horizontal")+mobileInputXValue;
 
             float rotationAmount = -horizontalInput * turnSpeed * Time.deltaTime;
 

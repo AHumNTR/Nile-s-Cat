@@ -25,7 +25,7 @@ public class TimerScript : MonoBehaviour
 
             if (time < 0) time = 0;
 
-            timer.text = $"{(int)time}" + ":" + Convert.ToString(100f*((Mathf.Round(time * 100f) / 100f) - (int)(time)));
+            timer.text = time.ToString("0.00").Replace(',',':');
 
             if (time <= 0)
             {

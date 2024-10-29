@@ -28,6 +28,12 @@ public class AlloyStatHandler : MonoBehaviour
     private void Start()
     {
         statSliders = GetComponentsInChildren<Slider>();
+        GameData.CrystalCount=0;
+        GameData.IsCrystalInCauldron=false;
+        GameData.WoodCount=0;
+        GameData.IsWoodInCauldron=false;
+        GameData.IronCount=0;
+        GameData.IsIronInCauldron=false;
     }
 
     private void Update()

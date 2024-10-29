@@ -37,7 +37,7 @@ public class CauldronController : MonoBehaviour
     {
         timeInSeconds -= Time.deltaTime;
         // timeText.text = $"{(int)timeInSeconds}";
-        timeText.text = $"{(int)timeInSeconds}" + ":" + Convert.ToString(100f*((Mathf.Round(timeInSeconds * 100f) / 100f) - (int)(timeInSeconds)));
+        timeText.text = timeInSeconds.ToString("0.00").Replace(',',':');
         if (timeInSeconds <= 0)
         {
             timeText.text = "00:00";

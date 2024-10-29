@@ -6,3 +6,4 @@
 /obj/*
 Assembly-CSharp.csproj
 /Build/
+/.utmp/
